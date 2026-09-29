@@ -1,0 +1,1881 @@
+<title>Tốt Hơn Là Nên Đi Tàu Điện Đi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ---- palette: "Thu vùng biển" — Burgundy, Băng Thanh (ice blue), Bạc, Đen ---- */
+    --paper:#F1ECE3;
+    --surface:#FDFBF7;
+    --surface-2:#E8EAE9;
+    --ink:#19181A;
+    --ink-dim:#4C4F50;
+    --ink-faint:#7D8281;
+    --route:#7A2333;        --route-rgb:122,35,51;
+    --route-deep:#3D1219;
+    --route-soft:#F1DEE1;
+    --signal:#3E6B78;       --signal-rgb:62,107,120;
+    --signal-soft:#DCEAEC;
+    --success:#3D7A63;
+    --success-soft:#DCEDE6;
+    --danger:#A93548;
+    --danger-soft:#F6E0E2;
+    --border:#CDD2D1;       --border-rgb:205,210,209;
+    --ink-rgb:25,24,26;
+    --shadow: 0 1px 2px rgba(61,18,25,.08), 0 10px 26px -14px rgba(61,18,25,.22);
+
+    --font-display:'Be Vietnam Pro', 'Source Sans 3', system-ui, sans-serif;
+    --font-body:'Source Sans 3', system-ui, sans-serif;
+    --font-han:'PingFang TC','Microsoft JhengHei','Noto Sans TC','Heiti TC',sans-serif;
+
+    --sp-1:.25rem; --sp-2:.5rem; --sp-3:.75rem; --sp-4:1rem; --sp-5:1.5rem; --sp-6:2.25rem; --sp-7:3rem;
+    --radius-s:8px; --radius-m:14px; --radius-l:22px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#131113; --surface:#1E1A1A; --surface-2:#2A2423;
+      --ink:#F0EBE4; --ink-dim:#B7B0A9; --ink-faint:#8A8480;
+      --route:#E08A99; --route-rgb:224,138,153; --route-deep:#F5CDD3; --route-soft:#3A1D22;
+      --signal:#8FC4CF; --signal-rgb:143,196,207; --signal-soft:#22343A;
+      --success:#79CDA9; --success-soft:#1C3A30;
+      --danger:#F0919C; --danger-soft:#3D2024;
+      --border:#3A3532; --border-rgb:58,53,50;
+      --ink-rgb:240,235,228;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 26px -14px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#131113; --surface:#1E1A1A; --surface-2:#2A2423;
+    --ink:#F0EBE4; --ink-dim:#B7B0A9; --ink-faint:#8A8480;
+    --route:#E08A99; --route-rgb:224,138,153; --route-deep:#F5CDD3; --route-soft:#3A1D22;
+    --signal:#8FC4CF; --signal-rgb:143,196,207; --signal-soft:#22343A;
+    --success:#79CDA9; --success-soft:#1C3A30;
+    --danger:#F0919C; --danger-soft:#3D2024;
+    --border:#3A3532; --border-rgb:58,53,50;
+    --ink-rgb:240,235,228;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 26px -14px rgba(0,0,0,.55);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    color:var(--ink); font-family:var(--font-body); line-height:1.55; -webkit-font-smoothing:antialiased;
+    background-color:var(--paper);
+    /* kẻ caro (tartan) dệt từ 4 màu chủ đề: Burgundy · Băng Thanh · Bạc · Đen */
+    background-image:
+      repeating-linear-gradient(90deg, rgba(var(--route-rgb),.10) 0 2px, transparent 2px 44px),
+      repeating-linear-gradient(90deg, rgba(var(--signal-rgb),.09) 0 1px, transparent 1px 88px),
+      repeating-linear-gradient(90deg, rgba(var(--ink-rgb),.05) 0 1px, transparent 1px 22px),
+      repeating-linear-gradient(90deg, rgba(var(--border-rgb),.4) 0 20px, transparent 20px 44px),
+      repeating-linear-gradient(0deg, rgba(var(--route-rgb),.10) 0 2px, transparent 2px 44px),
+      repeating-linear-gradient(0deg, rgba(var(--signal-rgb),.09) 0 1px, transparent 1px 88px),
+      repeating-linear-gradient(0deg, rgba(var(--ink-rgb),.05) 0 1px, transparent 1px 22px),
+      repeating-linear-gradient(0deg, rgba(var(--border-rgb),.4) 0 20px, transparent 20px 44px);
+    background-attachment:fixed;
+  }
+  h1,h2,h3,.disp{font-family:var(--font-display); text-wrap:balance; color:var(--route-deep);}
+  :root[data-theme="dark"] h1, :root[data-theme="dark"] h2, :root[data-theme="dark"] h3, :root[data-theme="dark"] .disp{color:var(--route);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) h1, :root:not([data-theme="light"]) h2, :root:not([data-theme="light"]) h3, :root:not([data-theme="light"]) .disp{color:var(--route);} }
+  .han{font-family:var(--font-han); font-size:1.18em; line-height:1.7;}
+  a{color:var(--route); }
+
+  @media (prefers-reduced-motion: reduce){ *{animation:none!important; transition:none!important; scroll-behavior:auto!important;} }
+
+  .page{max-width:1180px; margin:0 auto; padding:var(--sp-5) var(--sp-4) var(--sp-7);}
+
+  /* ---------- masthead ---------- */
+  .masthead{display:flex; gap:var(--sp-5); align-items:flex-start; padding-bottom:var(--sp-5); border-bottom:1px solid var(--border); margin-bottom:var(--sp-5); flex-wrap:wrap;}
+  .compass{flex:none; width:64px; height:64px;}
+  .masthead h1{font-size:1.9rem; font-weight:800; margin:0 0 .15em; letter-spacing:-.01em;}
+  .masthead .han-title{font-size:1.05rem; color:var(--ink-dim); font-family:var(--font-han); margin:0 0 .5em;}
+  .masthead p{margin:0; max-width:62ch; color:var(--ink-dim); font-size:.98rem;}
+  .meta-row{display:flex; gap:var(--sp-2); flex-wrap:wrap; margin-top:var(--sp-3);}
+  .chip{font-size:.78rem; font-weight:600; letter-spacing:.02em; padding:.3em .75em; border-radius:99px; background:var(--surface-2); color:var(--ink-dim); border:1px solid var(--border);}
+
+  /* ---------- layout shell ---------- */
+  .shell{display:grid; grid-template-columns:220px 1fr; gap:var(--sp-6); align-items:start;}
+  @media (max-width:840px){ .shell{grid-template-columns:1fr;} }
+
+  /* ---------- route rail ---------- */
+  .rail{position:sticky; top:var(--sp-4); display:flex; flex-direction:column; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-l); padding:var(--sp-4) var(--sp-3); box-shadow:var(--shadow);}
+  @media (max-width:840px){ .rail{position:static; flex-direction:row; overflow-x:auto; gap:var(--sp-2); padding:var(--sp-3);} }
+  .rail-title{font-size:.72rem; text-transform:uppercase; letter-spacing:.09em; color:var(--ink-faint); font-weight:700; padding:0 var(--sp-2) var(--sp-2); flex:none;}
+  @media (max-width:840px){ .rail-title{display:none;} }
+  .stop{position:relative; display:flex; align-items:center; gap:var(--sp-3); padding:var(--sp-3) var(--sp-2); border:none; background:none; text-align:left; cursor:pointer; border-radius:var(--radius-m); font-family:var(--font-body); color:var(--ink); flex:none; width:100%;}
+  @media (max-width:840px){ .stop{width:auto; min-width:150px;} }
+  .stop:hover{background:var(--surface-2);}
+  .stop:focus-visible{outline:2px solid var(--route); outline-offset:2px;}
+  .stop::before{content:""; position:absolute; left:29px; top:-6px; width:2px; height:calc(100% + 4px); background:var(--border); z-index:0;}
+  .stop:first-child::before{top:50%;}
+  @media (max-width:840px){ .stop::before{left:-6px; top:29px; width:calc(100% + 4px); height:2px;} .stop:first-child::before{left:50%;} }
+  .stop:last-child::before{height:calc(50% + 4px);}
+  .pin{position:relative; z-index:1; flex:none; width:34px; height:34px; border-radius:50%; background:var(--surface); border:2px solid var(--border); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.9rem; color:var(--ink-faint); font-family:var(--font-display); transition:background .15s, border-color .15s, color .15s;}
+  .stop[aria-current="true"] .pin{border-color:var(--route); color:var(--route); background:var(--route-soft);}
+  .stop.done .pin{background:var(--route); border-color:var(--route); color:#fff;}
+  .stop-label{display:flex; flex-direction:column; min-width:0;}
+  .stop-num{font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-faint); font-weight:700;}
+  .stop-name{font-size:.87rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .stop[aria-current="true"] .stop-name{color:var(--route-deep);}
+  :root[data-theme="dark"] .stop[aria-current="true"] .stop-name{color:var(--route);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .stop[aria-current="true"] .stop-name{color:var(--route);} }
+
+  .rail-foot{margin-top:var(--sp-3); padding-top:var(--sp-3); border-top:1px solid var(--border); font-size:.78rem; color:var(--ink-faint);}
+  @media (max-width:840px){ .rail-foot{display:none;} }
+  .progress-track{height:6px; border-radius:99px; background:var(--surface-2); overflow:hidden; margin-top:var(--sp-2);}
+  .progress-fill{height:100%; background:var(--route); border-radius:99px; width:0%;}
+
+  /* ---------- stage ---------- */
+  .stage-section{display:none;}
+  .stage-section.active{display:block;}
+  .tiet-head{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-l); padding:var(--sp-5); margin-bottom:var(--sp-5); box-shadow:var(--shadow);}
+  .tiet-eyebrow{font-size:.76rem; text-transform:uppercase; letter-spacing:.09em; color:var(--signal); font-weight:700; margin:0 0 .35em;}
+  .tiet-head h2{font-size:1.55rem; margin:0 0 .5em; font-weight:800;}
+  .tiet-head .goal{margin:0; color:var(--ink-dim);}
+  .tiet-head .goal b{color:var(--ink);}
+
+  .track{position:relative; padding-left:44px;}
+  .track::before{content:""; position:absolute; left:16px; top:8px; bottom:8px; width:2px; background:var(--border);}
+  .activity{position:relative; margin-bottom:var(--sp-5);}
+  .activity-num{position:absolute; left:-44px; top:0; width:34px; height:34px; border-radius:50%; background:var(--surface); border:2px solid var(--route); color:var(--route-deep); font-family:var(--font-display); font-weight:800; display:flex; align-items:center; justify-content:center; font-size:.95rem;}
+  :root[data-theme="dark"] .activity-num{color:var(--route);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .activity-num{color:var(--route);} }
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-l); padding:var(--sp-5); box-shadow:var(--shadow);}
+  .card h3{font-size:1.12rem; margin:0 0 .35em; font-weight:700;}
+  .card .instr{margin:0 0 var(--sp-4); color:var(--ink-dim); font-size:.95rem;}
+  .card .instr b{color:var(--ink);}
+  .note{background:var(--surface-2); border-radius:var(--radius-s); padding:var(--sp-3) var(--sp-4); font-size:.88rem; color:var(--ink-dim); border-left:3px solid var(--signal);}
+
+  /* ---------- form basics ---------- */
+  textarea, input[type="text"]{font-family:var(--font-body); border:1px solid var(--border); border-radius:var(--radius-s); background:var(--paper); color:var(--ink); padding:.6em .7em; font-size:.95rem;}
+  textarea{width:100%; min-height:5.5em; resize:vertical;}
+  textarea:focus, input[type="text"]:focus{outline:2px solid var(--route); outline-offset:1px; border-color:var(--route);}
+  .btn{font-family:var(--font-body); font-weight:600; font-size:.88rem; padding:.55em 1.1em; border-radius:99px; border:1px solid var(--route); background:var(--route); color:#fff; cursor:pointer; display:inline-flex; align-items:center; gap:.45em;}
+  .btn:hover{background:var(--route-deep); border-color:var(--route-deep);}
+  .btn:focus-visible{outline:2px solid var(--signal); outline-offset:2px;}
+  .btn.ghost{background:transparent; color:var(--route); border-color:var(--route);}
+  .btn.ghost:hover{background:var(--route-soft); color:var(--route-deep);}
+  :root[data-theme="dark"] .btn.ghost:hover{color:var(--route);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .btn.ghost:hover{color:var(--route);} }
+  .btn.warm{background:var(--signal); border-color:var(--signal); color:#fff;}
+  .btn.warm:hover{filter:brightness(.92);}
+  .btn-row{display:flex; gap:var(--sp-2); flex-wrap:wrap; margin-top:var(--sp-3);}
+  .btn:disabled{opacity:.5; cursor:default;}
+
+  /* ---------- quiz ---------- */
+  .quiz-card{background:var(--surface-2); border-radius:var(--radius-m); padding:var(--sp-5); text-align:center;}
+  .quiz-progress{font-size:.8rem; color:var(--ink-faint); font-weight:600; margin-bottom:var(--sp-2);}
+  .quiz-han{font-family:var(--font-han); font-size:2.4rem; line-height:1; margin:.2em 0 .1em;}
+  .quiz-pinyin{color:var(--ink-dim); font-size:1rem; margin-bottom:var(--sp-4);}
+  .quiz-options{display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-2); max-width:520px; margin:0 auto;}
+  @media (max-width:480px){ .quiz-options{grid-template-columns:1fr;} }
+  .opt{font-family:var(--font-body); text-align:left; padding:.75em 1em; border-radius:var(--radius-s); border:1px solid var(--border); background:var(--surface); cursor:pointer; font-size:.92rem; color:var(--ink);}
+  .opt:hover{border-color:var(--route);}
+  .opt.correct{background:var(--success-soft); border-color:var(--success); color:var(--route-deep); font-weight:700;}
+  .opt.wrong{background:var(--danger-soft); border-color:var(--danger); color:var(--danger);}
+  .opt[disabled]{cursor:default;}
+  .quiz-summary{max-width:520px; margin:0 auto; text-align:left;}
+  .quiz-summary ul{margin:.5em 0; padding-left:1.2em;}
+  .score-pill{display:inline-block; background:var(--route); color:#fff; font-weight:700; padding:.25em .8em; border-radius:99px; font-size:.85rem;}
+
+  /* ---------- cloze ---------- */
+  .cloze-line{margin:0 0 .75em; font-family:var(--font-han); font-size:1.12rem; line-height:2.1;}
+  .cloze-line .vi{display:block; font-family:var(--font-body); font-size:.82rem; color:var(--ink-faint); margin-top:-.3em;}
+  input.blank{font-family:var(--font-han); text-align:center; padding:.1em .2em; border-width:0 0 2px 0; border-radius:2px; border-color:var(--ink-faint); background:transparent; margin:0 .1em;}
+  input.blank.correct{border-color:var(--success); background:var(--success-soft); color:var(--route-deep);}
+  input.blank.wrong{border-color:var(--danger); background:var(--danger-soft); color:var(--danger);}
+  input.blank.revealed{border-color:var(--signal); background:var(--signal-soft); color:var(--ink);}
+  .cloze-status{font-size:.85rem; font-weight:600; margin-top:.5em; min-height:1.4em;}
+  .cloze-status.ok{color:var(--success);}
+  .cloze-status.bad{color:var(--danger);}
+
+  /* ---------- dialogue ---------- */
+  .dlg-line{display:grid; grid-template-columns:64px 1fr; gap:var(--sp-3); margin-bottom:.65em; align-items:baseline;}
+  .dlg-who{font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-faint); padding-top:.3em;}
+  .dlg-line .cloze-line{margin:0;}
+
+  /* ---------- reorder ---------- */
+  .reorder-list{display:flex; flex-direction:column; gap:var(--sp-2);}
+  .reorder-card{display:flex; gap:var(--sp-3); align-items:flex-start; padding:.7em .9em; border:1px solid var(--border); border-radius:var(--radius-s); background:var(--surface); cursor:pointer;}
+  .reorder-card .han{flex:1;}
+  .reorder-badge{flex:none; width:26px; height:26px; border-radius:50%; border:2px solid var(--ink-faint); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:800; font-size:.82rem; color:var(--ink-faint);}
+  .reorder-card.picked .reorder-badge{border-color:var(--route); color:#fff; background:var(--route);}
+  .reorder-card.right{border-color:var(--success);}
+  .reorder-card.wrong{border-color:var(--danger);}
+
+  /* ---------- reveal box ---------- */
+  .reveal-box{margin-top:var(--sp-2); font-size:.88rem; background:var(--route-soft); border-radius:var(--radius-s); padding:.7em .9em; color:var(--route-deep);}
+  :root[data-theme="dark"] .reveal-box{color:var(--ink);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .reveal-box{color:var(--ink);} }
+
+  /* ---------- pinyin ---------- */
+  .pinyin-line{font-size:.78rem; font-style:italic; color:var(--ink-faint); margin-top:.15em; font-family:var(--font-body);}
+  .dlg-line .pinyin-line{grid-column:2; margin-top:-.1em; margin-bottom:.3em;}
+  .passage-sentence{margin-bottom:.7em;}
+  .passage-sentence:last-child{margin-bottom:0;}
+  .pinyin-toggle{display:inline-flex; align-items:center; gap:.5em; font-size:.85rem; color:var(--ink-dim); cursor:pointer; margin-bottom:var(--sp-2);}
+  .pinyin-toggle input{width:15px; height:15px; accent-color:var(--route);}
+  .hide-pinyin .pinyin-line{display:none;}
+
+  /* ---------- checklist ---------- */
+  .check-item{display:flex; gap:.6em; align-items:flex-start; padding:.4em 0; font-size:.93rem;}
+  .check-item input{margin-top:.3em; width:16px; height:16px; accent-color:var(--route);}
+
+  /* ---------- completion report ---------- */
+  .btn.sm{padding:.4em .85em; font-size:.8rem;}
+  .completion-list{list-style:none; margin:.6em 0 0; padding:0; display:flex; flex-direction:column; gap:.35em;}
+  .completion-list li{font-size:.9rem; padding:.15em 0;}
+  .completion-list li.ok{color:var(--success);}
+  .completion-list li.missing{color:var(--danger); font-weight:600;}
+  .stop.submitted .pin{background:var(--signal); border-color:var(--signal); color:#fff;}
+  .teacher-table-el{width:100%; border-collapse:collapse; font-size:.88rem; min-width:560px;}
+  .teacher-table-el th, .teacher-table-el td{border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top;}
+  .teacher-table-el th{background:var(--surface-2); font-weight:700;}
+
+  /* ---------- scenario ---------- */
+  .scenario-box{background:var(--signal-soft); border-radius:var(--radius-m); padding:var(--sp-4); font-size:.98rem; min-height:3em; display:flex; align-items:center;}
+
+  /* ---------- ref table ---------- */
+  table.refcmp{width:100%; border-collapse:collapse; font-size:.92rem; margin-top:var(--sp-2);}
+  table.refcmp th, table.refcmp td{border:1px solid var(--border); padding:.55em .7em; text-align:left; vertical-align:top;}
+  table.refcmp th{background:var(--surface-2); font-family:var(--font-display); font-weight:700;}
+  table.refcmp td .han{font-size:1.05em;}
+  table.route-table th:first-child, table.route-table th:nth-child(2),
+  table.route-table td:first-child, table.route-table td:nth-child(2){width:15%;}
+  table.route-table td textarea{min-height:3.2em;}
+
+
+  .icon{width:1em; height:1em; display:inline-block; vertical-align:-.15em;}
+
+  footer.page-foot{margin-top:var(--sp-7); padding-top:var(--sp-4); border-top:1px solid var(--border); font-size:.82rem; color:var(--ink-faint); display:flex; justify-content:space-between; gap:var(--sp-3); flex-wrap:wrap;}
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <svg class="compass" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="32" cy="32" r="29" stroke="var(--route)" stroke-width="3"/>
+      <circle cx="32" cy="32" r="3" fill="var(--signal)"/>
+      <path d="M32 10 L38 30 L32 26 L26 30 Z" fill="var(--route)"/>
+      <path d="M32 54 L26 34 L32 38 L38 34 Z" fill="var(--ink-faint)"/>
+      <text x="32" y="8" text-anchor="middle" font-size="6" fill="var(--ink-dim)" font-family="sans-serif">N</text>
+    </svg>
+    <div>
+      <p class="tiet-eyebrow" style="margin:0 0 .2em;">Phiếu học tập số hoá · Bài 2</p>
+      <h1>Tốt hơn là nên đi tàu điện đi!</h1>
+      <p class="han-title">還是坐捷運吧！</p>
+      <p>6 trạm luyện tập: Từ vựng I, Từ vựng II, Ngữ pháp nhóm A, Ngữ pháp nhóm B, Nghe hiểu và Dự án nói tư vấn chọn phương tiện di chuyển. Bấm vào một trạm bên trái (hoặc cuộn ngang trên điện thoại) để bắt đầu — bài làm của em được lưu tự động ngay trên máy này.</p>
+      <div class="meta-row">
+        <span class="chip">6 trạm luyện tập</span>
+        <span class="chip">46 từ vựng</span>
+        <span class="chip">6 điểm ngữ pháp</span>
+        <span class="chip">30 câu nghe hiểu</span>
+        <span class="chip">Tự chấm ngay tại chỗ</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <nav class="rail" id="rail" aria-label="Các trạm học tập">
+      <div class="rail-title">Lộ trình</div>
+      <!-- stops injected by JS -->
+      <div class="rail-foot">
+        <div id="progressText">0/6 trạm hoàn thành</div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+    </nav>
+
+    <main class="stage" id="stage">
+
+      <!-- ============ TRẠM 1 — TỪ VỰNG I & HỘI THOẠI ============ -->
+      <section class="stage-section" id="sec-1" data-tiet="1">
+        <div class="tiet-head">
+          <p class="tiet-eyebrow">Trạm 1</p>
+          <h2>Từ vựng I &amp; Hội thoại chọn phương tiện</h2>
+          <p class="goal">Mục tiêu: nhớ <b>21 từ vựng</b> đầu bài và nghe/đọc hiểu được hội thoại bàn về lựa chọn phương tiện đi lại.</p>
+        </div>
+        <div class="track">
+
+          <div class="activity">
+            <div class="activity-num">1</div>
+            <div class="card">
+              <h3>Khởi động — Về nhà hoặc đi xa, em thường chọn phương tiện gì?</h3>
+              <p class="instr">Trả lời nhanh trước khi vào bài, không cần đúng sai. Ví dụ: khi về nhà dịp cuối tuần/nghỉ lễ, hoặc khi cả lớp đi tham quan xa, em thường đi bằng gì? Vì sao em chọn phương tiện đó mà không chọn phương tiện khác?</p>
+              <textarea data-store="t1-warmup" placeholder="Ví dụ: Về nhà em thường đi xe khách, vì..."></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">2</div>
+            <div class="card">
+              <h3>Trắc nghiệm &amp; Dịch câu — Từ vựng I (21 từ)</h3>
+              <p class="instr">Số thứ tự dưới đây theo đúng thứ tự từ vựng trong giáo trình, để cả lớp cùng theo dõi chung tiến độ. Với mỗi từ: (1) chọn nghĩa tiếng Việt đúng, rồi (2) dịch câu tiếng Việt bên dưới sang tiếng Trung, cố gắng dùng đúng từ đó (không có đáp án gợi ý — thầy/cô sẽ kiểm tra trực tiếp).</p>
+              <div class="vt-root" id="vt-vocab1"></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">3</div>
+            <div class="card">
+              <h3>Điền từ còn thiếu trong hội thoại</h3>
+              <p class="instr"><b>Trên lớp:</b> nghe thầy/cô phát audio 02-01 rồi điền. <b>Tự ôn ở nhà:</b> đọc thầm rồi thử điền lại bằng trí nhớ, sau đó bấm "Kiểm tra" để tự chấm (không có đáp án gợi ý sẵn).</p>
+              <p class="instr" style="font-size:.85rem;">Phiên âm (pinyin) chỉ hiện cho phần đã cho sẵn — từ cần điền được ký hiệu "(…)" để em không bị lộ đáp án. Dưới mỗi câu, em dịch luôn câu đó sang tiếng Việt.</p>
+              <label class="pinyin-toggle"><input type="checkbox" id="toggle-pinyin-dialogue" checked> Hiện phiên âm (pinyin)</label>
+              <div class="cloze-block" id="cloze-dialogue"></div>
+              <div class="btn-row">
+                <button class="btn" data-action="check">Kiểm tra</button>
+                <button class="btn ghost" data-action="reset">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-status></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">4</div>
+            <div class="card">
+              <h3>Đóng vai biến thể — đổi địa điểm &amp; phương tiện</h3>
+              <p class="instr">Bốc thăm một tình huống khác để thay cho "đi xem điện ảnh bằng xe buýt/tàu điện", sau đó cùng bạn đóng vai lại hội thoại với tình huống mới này.</p>
+              <div class="scenario-box" id="place-box">Bấm nút bên dưới để bốc thăm tình huống</div>
+              <div class="btn-row"><button class="btn warm" id="btn-place"><svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="6" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="1.6" fill="#fff"/></svg>Bốc thăm tình huống</button></div>
+              <p class="instr" style="margin-top:var(--sp-4);">Viết lại đoạn hội thoại ngắn cho tình huống mới này (dùng ít nhất cấu trúc 還是…吧):</p>
+              <textarea data-store="t1-roleplay" placeholder="Ví dụ: A：你要去哪裡？B：我要去……，你覺得我應該坐什麼車？……"></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">5</div>
+            <div class="card">
+              <h3>Củng cố trên lớp</h3>
+              <p class="note">Trò chơi "Việt–Trung tốc độ" làm trực tiếp cùng cả lớp và thầy/cô — không cần thao tác ở đây. Khi đã học xong tất cả các bước trên, đánh dấu hoàn thành nhé.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ TRẠM 2 — TỪ VỰNG II & ĐOẠN VĂN ============ -->
+      <section class="stage-section" id="sec-2" data-tiet="2">
+        <div class="tiet-head">
+          <p class="tiet-eyebrow">Trạm 2</p>
+          <h2>Từ vựng II &amp; Đoạn văn hành trình của Mỹ Mỹ</h2>
+          <p class="goal">Mục tiêu: nhớ <b>25 từ vựng</b> tiếp theo, đọc hiểu đúng hành trình nhiều chặng của nhân vật và kể lại được bằng lời của em.</p>
+        </div>
+        <div class="track">
+
+          <div class="activity">
+            <div class="activity-num">1</div>
+            <div class="card">
+              <h3>Ôn nhanh 21 từ của Trạm 1</h3>
+              <p class="note">Muốn ôn lại, quay lên <b>Trạm 1 → hoạt động 2</b> và làm lại bài trắc nghiệm — điểm sẽ được tính lại từ đầu mỗi lần làm.</p>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">2</div>
+            <div class="card">
+              <h3>Trắc nghiệm &amp; Dịch câu — Từ vựng II (25 từ)</h3>
+              <p class="instr">Chú ý trợ từ <span class="han">地</span> — chưa cần hiểu ngữ pháp vội, Trạm 4 mình sẽ học kỹ khi lặp tính từ AABB. Số thứ tự theo đúng thứ tự từ vựng trong giáo trình. Với mỗi từ: chọn nghĩa đúng, rồi dịch câu tiếng Việt bên dưới sang tiếng Trung (không có đáp án gợi ý).</p>
+              <div class="vt-root" id="vt-vocab2"></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">3</div>
+            <div class="card">
+              <h3>Đọc hiểu đoạn văn</h3>
+              <p class="instr">Đọc đoạn văn dưới đây — dưới mỗi câu, em dịch luôn câu đó sang tiếng Việt. Sau đoạn văn, trả lời 5 câu hỏi (viết bằng tiếng Trung hoặc tiếng Việt đều được). Không có đáp án gợi ý — thầy/cô sẽ kiểm tra trực tiếp.</p>
+              <label class="pinyin-toggle"><input type="checkbox" id="toggle-pinyin-passage" checked> Hiện phiên âm (pinyin)</label>
+              <div class="han" id="passage-text" style="background:var(--surface-2); padding:var(--sp-4); border-radius:var(--radius-s);"></div>
+              <div id="reading-questions"></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">4</div>
+            <div class="card">
+              <h3>Sắp xếp lại hành trình</h3>
+              <p class="instr">8 câu bên dưới đang bị xáo trộn. Bấm lần lượt theo đúng thứ tự hành trình của Mỹ Mỹ (bấm nhầm thì bấm lại lần nữa để bỏ chọn). Trên lớp, nhóm của em còn vẽ lại hành trình này lên sơ đồ giấy.</p>
+              <div class="reorder-list" id="reorder-passage"></div>
+              <div class="btn-row">
+                <button class="btn" data-action="check-reorder">Kiểm tra thứ tự</button>
+                <button class="btn ghost" data-action="reset-reorder">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-reorder-status></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">5</div>
+            <div class="card">
+              <h3>Kể lại hành trình bằng lời của em</h3>
+              <p class="instr">Không nhìn đoạn văn gốc, dùng tối thiểu 5 từ vựng mới để kể tóm tắt hành trình của Mỹ Mỹ:</p>
+              <textarea data-store="t2-retell" placeholder="美美從法國……"></textarea>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ TRẠM 3 — NGỮ PHÁP NHÓM A ============ -->
+      <section class="stage-section" id="sec-3" data-tiet="3">
+        <div class="tiet-head">
+          <p class="tiet-eyebrow">Trạm 3</p>
+          <h2>Ngữ pháp nhóm A — 一點也不 / 還是…吧 / V一點</h2>
+          <p class="goal">Mục tiêu: dùng đúng 3 cấu trúc liên quan đến "một chút" và câu đề nghị/yêu cầu — <span class="han">一點也不</span> V, <span class="han">還是…吧</span>, trạng ngữ <span class="han">一點</span>.</p>
+        </div>
+        <div class="track">
+
+          <div class="activity">
+            <div class="activity-num">1</div>
+            <div class="card">
+              <h3><span class="han">一點也不</span> V — phủ định nhấn mạnh tuyệt đối</h3>
+              <p class="instr">Gợi ý sự phủ định mạnh và phóng đại, giống như "chẳng/chả... tí/chút nào (cả/hết)" trong tiếng Việt. Lưu ý: nếu tân ngữ không đứng đầu câu làm chủ đề thì phải đứng sau <span class="han">一點</span>, trước động từ. Điền từ còn thiếu:</p>
+              <div class="cloze-block" id="cloze-yidianyebu">
+                <div class="cloze-line" data-tmpl="坐公車去故宮博物院比較慢，但坐捷運{{一點也不}}慢。"><span class="vi">Đi xe buýt đến Bảo tàng Cố Cung khá chậm, nhưng đi tàu điện thì không chậm chút nào.</span></div>
+                <div class="cloze-line" data-tmpl="一點也不{{麻煩}}，捷運比較快，坐公車要花一個多小時。"><span class="vi">Không phiền chút nào, tàu điện nhanh hơn, đi xe buýt phải mất hơn một tiếng.</span></div>
+                <div class="cloze-line" data-tmpl="他{{一點也不}}喜歡塞車，所以每天騎腳踏車上班。"><span class="vi">Anh ấy không thích kẹt xe chút nào, nên ngày nào cũng đạp xe đi làm.</span></div>
+                <div class="cloze-line" data-tmpl="捷運車票{{一點也不}}貴，學生也付得起。"><span class="vi">Vé tàu điện không đắt chút nào, học sinh cũng đủ khả năng chi trả.</span></div>
+                <div class="cloze-line" data-tmpl="已經晚上十二點多了，他{{一點也不}}想睡覺。"><span class="vi">Đã hơn 12 giờ đêm rồi mà anh ấy không buồn ngủ chút nào.</span></div>
+              </div>
+              <div class="btn-row">
+                <button class="btn" data-action="check">Kiểm tra</button>
+                <button class="btn ghost" data-action="reset">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-status></div>
+              <p class="instr" style="margin-top:var(--sp-4);">Bốc thăm một tình huống phủ định (đồ ăn/phương tiện/thời tiết…) và viết 1 câu dùng <span class="han">一點也不</span>:</p>
+              <textarea data-store="t3-practice-a" placeholder="Ví dụ: 這幾天一點也不冷。"></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">2</div>
+            <div class="card">
+              <h3><span class="han">還是…吧</span> — đề nghị lựa chọn tốt nhất</h3>
+              <p class="instr">Trạng từ <span class="han">還是</span> chỉ ra "đây là lựa chọn tốt nhất trong hoàn cảnh này", câu luôn kết thúc bằng <span class="han">吧</span>. Điền từ còn thiếu:</p>
+              <div class="cloze-block" id="cloze-haishi">
+                <div class="cloze-line" data-tmpl="妳{{還是}}坐捷運{{吧}}！"><span class="vi">Tốt hơn là em nên đi tàu điện đi!</span></div>
+                <div class="cloze-line" data-tmpl="坐公車很慢，我們{{還是}}坐捷運{{吧}}！"><span class="vi">Đi xe buýt chậm lắm, chúng ta nên đi tàu điện thôi!</span></div>
+                <div class="cloze-line" data-tmpl="已經晚上十一點了，我們{{還是}}明天早上再打電話給老師{{吧}}！"><span class="vi">Đã 11 giờ đêm rồi, chúng ta nên sáng mai gọi điện cho thầy/cô thôi!</span></div>
+                <div class="cloze-line" data-tmpl="雨下得很大，你{{還是}}別回家{{吧}}！"><span class="vi">(Phủ định) Mưa to quá, em đừng về nhà thì hơn!</span></div>
+                <div class="cloze-line" data-tmpl="去機場坐公車比較便宜，可是坐捷運比較快，我們{{還是}}坐捷運去{{吧}}！"><span class="vi">Đi xe buýt ra sân bay rẻ hơn, nhưng đi tàu điện nhanh hơn, chúng ta nên đi tàu điện đi!</span></div>
+              </div>
+              <div class="btn-row">
+                <button class="btn" data-action="check">Kiểm tra</button>
+                <button class="btn ghost" data-action="reset">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-status></div>
+              <p class="instr" style="margin-top:var(--sp-4);">Bốc thăm một tình huống chọn phương tiện (2 lựa chọn + 1 tiêu chí như giá/thời gian/tiện lợi) và viết lời đề nghị hoàn chỉnh bằng <span class="han">還是…吧</span>:</p>
+              <textarea data-store="t3-practice-b" placeholder="Ví dụ: 坐公車比較便宜，可是坐捷運比較快，你還是坐捷運吧！"></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">3</div>
+            <div class="card">
+              <h3>Trạng ngữ với <span class="han">一點</span> — bổ nghĩa cho hành động</h3>
+              <p class="instr">Động từ trạng thái + <span class="han">一點</span> tạo thành trạng ngữ bổ nghĩa cho hành động phía sau, việc dùng <span class="han">一點</span> là bắt buộc. Thường dùng trong câu yêu cầu/mệnh lệnh. Điền từ còn thiếu:</p>
+              <div class="cloze-block" id="cloze-yidian">
+                <div class="cloze-line" data-tmpl="你走慢{{一點}}！"><span class="vi">Bạn đi chậm một chút!</span></div>
+                <div class="cloze-line" data-tmpl="你們吃快{{一點}}！"><span class="vi">Các em ăn nhanh một chút!</span></div>
+                <div class="cloze-line" data-tmpl="你的字要寫好看{{一點}}！"><span class="vi">Chữ của em phải viết đẹp hơn một chút!</span></div>
+                <div class="cloze-line" data-tmpl="要上課了，你還不走快{{一點}}嗎？"><span class="vi">Sắp vào học rồi, em không đi nhanh hơn một chút à?</span></div>
+              </div>
+              <div class="btn-row">
+                <button class="btn" data-action="check">Kiểm tra</button>
+                <button class="btn ghost" data-action="reset">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-status></div>
+              <p class="instr" style="margin-top:var(--sp-4);">Bốc thăm một hành động/mệnh lệnh (đi chậm lại, nói to hơn, viết đẹp hơn…) và viết 1 câu yêu cầu dùng V + <span class="han">一點</span>:</p>
+              <textarea data-store="t3-practice-c" placeholder="Ví dụ: 你說話大聲一點！"></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">4</div>
+            <div class="card">
+              <h3>Củng cố tổng hợp Nhóm A</h3>
+              <p class="note">Trò chơi "Chọn đúng cấu trúc" làm trực tiếp cùng cả lớp: nghe tình huống, chọn 1 trong 3 cấu trúc vừa học (一點也不 / 還是…吧 / V一點) rồi nói thành câu hoàn chỉnh. Khi đã học xong, đánh dấu hoàn thành nhé.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ TRẠM 4 — NGỮ PHÁP NHÓM B ============ -->
+      <section class="stage-section" id="sec-4" data-tiet="4">
+        <div class="tiet-head">
+          <p class="tiet-eyebrow">Trạm 4</p>
+          <h2>Ngữ pháp nhóm B — Lặp AABB / 不太 / 部・邊</h2>
+          <p class="goal">Mục tiêu: dùng đúng 3 cấu trúc còn lại của bài; đặc biệt <b>phân biệt được</b> <span class="han">一點也不</span> (đã học Trạm 3) và <span class="han">不太</span> — đây là bước quan trọng nhất của trạm này.</p>
+        </div>
+        <div class="track">
+
+          <div class="activity">
+            <div class="activity-num">1</div>
+            <div class="card">
+              <h3>Lặp lại tính từ hai âm tiết (AABB)</h3>
+              <p class="instr">Tính từ 2 âm tiết AB lặp lại thành AABB để nhấn mạnh trạng thái: đặt trước <span class="han">地</span> để bổ nghĩa cho động từ, đặt trước <span class="han">的</span> để bổ nghĩa cho danh từ, làm vị ngữ thì câu thường kết thúc bằng <span class="han">的</span>. Điền từ còn thiếu:</p>
+              <div class="cloze-block" id="cloze-aabb">
+                <div class="cloze-line" data-tmpl="大家{{開開心心}}地一起吃飯。"><span class="vi">Mọi người vui vẻ cùng nhau ăn cơm.</span></div>
+                <div class="cloze-line" data-tmpl="我要租一個{{乾乾淨淨}}的房間，比較舒服。"><span class="vi">Tôi muốn thuê một căn phòng sạch sẽ, thoải mái hơn.</span></div>
+                <div class="cloze-line" data-tmpl="房間{{乾乾淨淨}}的，看起來真舒服。"><span class="vi">Căn phòng sạch sẽ tinh tươm, trông thật thoải mái.</span></div>
+                <div class="cloze-line" data-tmpl="有了悠遊卡，就可以{{輕輕鬆鬆}}地到處逛逛。"><span class="vi">Có thẻ Du Du rồi thì có thể thoải mái đi dạo khắp nơi.</span></div>
+              </div>
+              <div class="btn-row">
+                <button class="btn" data-action="check">Kiểm tra</button>
+                <button class="btn ghost" data-action="reset">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-status></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">2</div>
+            <div class="card">
+              <h3>Phân loại: tính từ nào lặp được kiểu AABB?</h3>
+              <p class="instr">Không phải tính từ 2 âm tiết nào cũng lặp lại được — đây là danh sách cần <b>ghi nhớ theo từng từ cụ thể</b>, không suy luận được. Bấm chọn "Lặp được" hoặc "Không lặp được" cho từng từ:</p>
+              <div id="aabb-classify"></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">3</div>
+            <div class="card">
+              <h3><span class="han">不太</span> — phủ định nhẹ, lịch sự</h3>
+              <p class="instr">Cấu trúc <span class="han">不太</span> + động từ trạng thái thể hiện phủ định nhẹ nhàng, lịch sự — khác với phủ định tuyệt đối <span class="han">一點也不</span>. Điền từ còn thiếu:</p>
+              <div class="cloze-block" id="cloze-butai">
+                <div class="cloze-line" data-tmpl="這杯茶{{不太}}熱。"><span class="vi">Cốc trà này không quá nóng.</span></div>
+                <div class="cloze-line" data-tmpl="去法國的飛機{{不太}}多，只有中華和大華兩家公司。"><span class="vi">Chuyến bay đi Pháp không nhiều lắm, chỉ có hai hãng Trung Hoa và Đại Hoa.</span></div>
+                <div class="cloze-line" data-tmpl="聽說你打算明天去海邊游泳，可是這幾天的天氣{{不太}}好。"><span class="vi">Nghe nói bạn định mai đi biển bơi, nhưng thời tiết mấy hôm nay không tốt lắm.</span></div>
+                <div class="cloze-line" data-tmpl="綠島在台灣的東南邊，到那裡{{不太}}方便。"><span class="vi">Đảo Xanh ở phía Đông Nam Đài Loan, đến đó không tiện lắm.</span></div>
+              </div>
+              <div class="btn-row">
+                <button class="btn" data-action="check">Kiểm tra</button>
+                <button class="btn ghost" data-action="reset">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-status></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">4</div>
+            <div class="card">
+              <h3>★ Phân biệt bắt buộc: <span class="han">一點也不</span> hay <span class="han">不太</span>?</h3>
+              <table class="refcmp">
+                <tr><th></th><th><span class="han">一點也不</span> V</th><th><span class="han">不太</span> + Vs</th></tr>
+                <tr><td>Mức độ phủ định</td><td>TUYỆT ĐỐI — không... chút nào</td><td>NHẸ/LỊCH SỰ — không quá/không hẳn</td></tr>
+                <tr><td>Ví dụ</td><td class="han">一點也不麻煩。</td><td class="han">不太方便。</td></tr>
+                <tr><td>Đối tượng dùng</td><td>Động từ hành động hoặc động từ trạng thái</td><td>Chỉ dùng với động từ trạng thái</td></tr>
+              </table>
+              <p class="instr" style="margin-top:var(--sp-4);">Chọn cấu trúc đúng cho mỗi tình huống — đây là bước quan trọng nhất của cả bài, đừng bỏ qua:</p>
+              <div class="quiz-root" id="quiz-distinguish" data-bank="distinguish"></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">5</div>
+            <div class="card">
+              <h3>Vị trí với <span class="han">部</span> / <span class="han">邊</span></h3>
+              <p class="instr"><span class="han">部</span> chỉ "các phần" bên trong một vùng; <span class="han">邊</span> chỉ "các cạnh" so với một điểm tham chiếu — với một quốc gia, <span class="han">部</span> dùng cho khu vực bên trong, <span class="han">邊</span> dùng cho khu vực bên ngoài biên giới. Lưu ý: có <span class="han">中部</span> (Trung Bộ) nhưng không có *<span class="han">中邊</span>. Điền từ còn thiếu:</p>
+              <div class="cloze-block" id="cloze-buwei">
+                <div class="cloze-line" data-tmpl="台灣的{{北部}}、{{南部}}有很多好玩的地方。"><span class="vi">Miền Bắc, miền Nam Đài Loan có nhiều nơi thú vị.</span></div>
+                <div class="cloze-line" data-tmpl="台灣{{東部}}的風景很美。"><span class="vi">Phong cảnh miền Đông Đài Loan rất đẹp.</span></div>
+                <div class="cloze-line" data-tmpl="台灣{{東邊}}的大海非常乾淨。"><span class="vi">Biển ở phía Đông Đài Loan rất sạch.</span></div>
+                <div class="cloze-line" data-tmpl="那個地方{{西邊}}有山，{{南邊}}有海。"><span class="vi">Nơi đó phía Tây có núi, phía Nam có biển.</span></div>
+                <div class="cloze-line" data-tmpl="綠島在台灣的{{東南邊}}。"><span class="vi">Đảo Xanh ở phía Đông Nam của Đài Loan.</span></div>
+              </div>
+              <div class="btn-row">
+                <button class="btn" data-action="check">Kiểm tra</button>
+                <button class="btn ghost" data-action="reset">Làm lại</button>
+              </div>
+              <div class="cloze-status" data-status></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ TRẠM 5 — NGHE HIỂU ============ -->
+      <section class="stage-section" id="sec-5" data-tiet="5">
+        <div class="tiet-head">
+          <p class="tiet-eyebrow">Trạm 5</p>
+          <h2>Nghe hiểu tổng hợp — 30 câu từ dễ đến khó</h2>
+          <p class="goal">Mục tiêu: luyện <b>nghe hiểu</b> bằng chính từ vựng &amp; ngữ pháp của Bài 2 — từ nhận diện thông tin đơn giản đến phân tích ý nghĩa sâu hơn.</p>
+          <p class="note" style="margin-top:var(--sp-3);">Giọng đọc dùng công nghệ chuyển văn bản thành giọng nói có sẵn trên trình duyệt/thiết bị của em (không phải giọng thu âm chuyên nghiệp) — chất lượng, giọng đọc và tốc độ có thể khác nhau tuỳ máy. Nếu thiết bị chưa có giọng tiếng Trung, hãy thử trên điện thoại/máy tính khác, hoặc nhờ thầy/cô đọc to văn bản gốc hiện ra sau khi em trả lời.</p>
+        </div>
+        <div class="track">
+
+          <div class="activity">
+            <div class="activity-num">1</div>
+            <div class="card">
+              <h3>Mức 1 — Đúng / Sai <span style="font-weight:400; color:var(--ink-faint); font-size:.8em;">(10 câu)</span></h3>
+              <p class="instr">Bấm nghe câu tiếng Trung, sau đó chọn nhận định tiếng Việt bên dưới là <b>Đúng</b> hay <b>Sai</b>.</p>
+              <div id="listen-l1"></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">2</div>
+            <div class="card">
+              <h3>Mức 2 — Trắc nghiệm ABCD <span style="font-weight:400; color:var(--ink-faint); font-size:.8em;">(10 câu)</span></h3>
+              <p class="instr">Bấm nghe đoạn ngắn, sau đó chọn đáp án đúng nhất.</p>
+              <div id="listen-l2"></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">3</div>
+            <div class="card">
+              <h3>Mức 3 — Phân tích <span style="font-weight:400; color:var(--ink-faint); font-size:.8em;">(10 câu)</span></h3>
+              <p class="instr">Bấm nghe đoạn ngắn rồi viết phần phân tích của em — không có một đáp án duy nhất, quan trọng là lập luận hợp lý. Không có gợi ý sẵn — thầy/cô sẽ trao đổi trực tiếp trên lớp.</p>
+              <div id="listen-l3"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ TRẠM 6 — DỰ ÁN NÓI ============ -->
+      <section class="stage-section" id="sec-6" data-tiet="6">
+        <div class="tiet-head">
+          <p class="tiet-eyebrow">Trạm 6</p>
+          <h2>Dự án nói: "Tư vấn chọn phương tiện di chuyển"</h2>
+          <p class="goal">Mục tiêu: <b>dùng toàn bộ kiến thức của Bài 2</b> (từ vựng, 6 điểm ngữ pháp, kỹ năng nghe) vào một hội thoại tư vấn thật.</p>
+        </div>
+        <div class="track">
+
+          <div class="activity">
+            <div class="activity-num">1</div>
+            <div class="card">
+              <h3>Ôn nhanh 6 điểm ngữ pháp cả bài</h3>
+              <p class="instr">Viết nhanh 1 câu ví dụ cho mỗi cấu trúc: <span class="han">一點也不</span>, <span class="han">還是…吧</span>, V<span class="han">一點</span>, AABB, <span class="han">不太</span>, <span class="han">部/邊</span>.</p>
+              <textarea data-store="t6-review" placeholder="1) 一點也不……&#10;2) ……還是……吧！&#10;3) ……"></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">2</div>
+            <div class="card">
+              <h3>Hỏi &amp; chỉ đường phương tiện giao thông công cộng</h3>
+              <p class="instr">Mục tiêu: hỏi và chỉ đường khi dùng phương tiện công cộng. Học 4 mẫu câu bên dưới, sau đó viết phần <span class="han">搭乘指示</span> (chỉ dẫn đường đi) cho từng tuyến — riêng Tuyến 4, em tự nghĩ ra 1 cặp điểm xuất phát/điểm đến rồi tự viết chỉ dẫn cho tuyến đó.</p>
+              <div style="background:var(--surface-2); border-radius:var(--radius-m); padding:var(--sp-3) var(--sp-4); margin:var(--sp-3) 0;">
+                <p style="margin:0 0 .5em; font-weight:700; font-size:.85rem; color:var(--ink-faint);">MẪU CÂU</p>
+                <p class="han" style="margin:.3em 0;">① 到…，坐捷運應該怎麼坐？</p>
+                <p class="han" style="margin:.3em 0;">② 先從…坐往…。</p>
+                <p class="han" style="margin:.3em 0;">③ 到了…，再換車，搭…。</p>
+                <p class="han" style="margin:.3em 0;">④ 坐…站，…就到了。</p>
+              </div>
+              <table class="refcmp route-table">
+                <tr><th>起點</th><th>目的地</th><th>搭乘指示</th></tr>
+                <tr>
+                  <td>台北車站</td><td>南京復興</td>
+                  <td class="han" style="font-size:.92rem;">（範例）先從台北車站坐往南港展覽館的5號線，到了忠孝復興站，再換車，搭往南港展覽館的1號線，坐一站，南京復興站就到了。</td>
+                </tr>
+                <tr>
+                  <td>善導寺</td><td>淡水老街</td>
+                  <td><textarea data-store="route1-instr" placeholder="先從……坐往……"></textarea></td>
+                </tr>
+                <tr>
+                  <td>北投</td><td>台北動物園</td>
+                  <td><textarea data-store="route2-instr" placeholder="先從……坐往……"></textarea></td>
+                </tr>
+                <tr>
+                  <td>公館</td><td>南港展覽館</td>
+                  <td><textarea data-store="route3-instr" placeholder="先從……坐往……"></textarea></td>
+                </tr>
+                <tr>
+                  <td><textarea data-store="route4-start" style="min-height:2.4em;" placeholder="em tự chọn điểm xuất phát"></textarea></td>
+                  <td><textarea data-store="route4-dest" style="min-height:2.4em;" placeholder="em tự chọn điểm đến"></textarea></td>
+                  <td><textarea data-store="route4-instr" placeholder="先從……坐往……"></textarea></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">3</div>
+            <div class="card">
+              <h3>Tìm hiểu văn hóa: Bản đồ MRT Cao Hùng (高雄捷運)</h3>
+              <p class="instr">Cao Hùng có 2 tuyến MRT chính: <b>Tuyến Đỏ (紅線)</b> và <b>Tuyến Cam (橘線)</b>, giao nhau tại ga <span class="han">美麗島</span>. Mở bản đồ thật bên dưới để tra cứu, bấm "Bốc thăm địa điểm" để nhận ngẫu nhiên 1 cặp ga xuất phát – ga đến, rồi dùng các mẫu câu ở hoạt động 2 để viết một đoạn chỉ đường hoàn chỉnh dựa trên tuyến thật (không bịa tuyến).</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://www.metroman.cn/zh-hant/maps/kaohsiung/network" target="_blank" rel="noopener">🗺️ Mở bản đồ MRT Cao Hùng (MetroMan)</a>
+              </div>
+              <div class="scenario-box" id="khmap-box" style="margin-top:var(--sp-3);">Bấm nút bên dưới để bốc thăm 2 địa điểm</div>
+              <div class="btn-row"><button type="button" class="btn warm" id="btn-khmap">🎲 Bốc thăm địa điểm</button></div>
+              <p class="instr" style="margin-top:var(--sp-4);">Viết đoạn chỉ đường (<span class="han">指示</span>) hoàn chỉnh cho cặp ga em vừa bốc được:</p>
+              <textarea data-store="khmap-paragraph" style="min-height:7em;" placeholder="先從……坐往……"></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">4</div>
+            <div class="card">
+              <h3>Dự án nói: bốc thăm tình huống</h3>
+              <p class="instr">Nhóm của em bốc một tình huống, sau đó thảo luận để tư vấn chọn phương tiện di chuyển phù hợp.</p>
+              <div class="scenario-box" id="scenario-box">Bấm nút bên dưới để bốc thăm tình huống</div>
+              <div class="btn-row"><button class="btn warm" id="btn-scenario"><svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#fff" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.4" fill="#fff"/><circle cx="15.5" cy="8.5" r="1.4" fill="#fff"/><circle cx="12" cy="12" r="1.4" fill="#fff"/><circle cx="8.5" cy="15.5" r="1.4" fill="#fff"/><circle cx="15.5" cy="15.5" r="1.4" fill="#fff"/></svg>Bốc thăm tình huống</button></div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">5</div>
+            <div class="card">
+              <h3>Soạn kịch bản nhóm</h3>
+              <p class="instr">Viết hội thoại hoàn chỉnh — bắt buộc có so sánh ít nhất 2 phương tiện và đề nghị bằng <span class="han">還是…吧</span>; khuyến khích thêm ít nhất 1 cấu trúc khác trong 5 cấu trúc còn lại:</p>
+              <textarea style="min-height:9em;" data-store="t6-script" placeholder="A：你要怎麼去……？&#10;B：……"></textarea>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-num">6</div>
+            <div class="card">
+              <h3>Tự kiểm tra trước khi trình diễn</h3>
+              <div id="rubric-checklist"></div>
+              <p class="note" style="margin-top:var(--sp-3);">Trình diễn 1,5–2 phút trước lớp, các nhóm khác và thầy/cô sẽ chấm chéo theo đúng các tiêu chí trên.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ TRẠM 7 — TỔNG KẾT & NỘP BÀI ============ -->
+      <section class="stage-section" id="sec-7" data-tiet="7">
+        <div class="tiet-head">
+          <p class="tiet-eyebrow">Trạm 7 · Trạm cuối cùng</p>
+          <h2>Tổng kết &amp; Nộp bài</h2>
+          <p class="goal">Kiểm tra lại xem em đã điền đủ chưa — mục nào có dấu <b style="color:var(--danger);">✗</b> nghĩa là còn thiếu, bấm "Đi tới trạm này" để quay lại hoàn thành. Khi tất cả đều là <b style="color:var(--success);">✓</b>, nút "Nộp bài" sẽ mở ra.</p>
+        </div>
+
+        <div class="card" style="margin-bottom:var(--sp-4);">
+          <div id="overall-status" style="font-weight:700; font-size:1.02rem;"></div>
+          <div class="btn-row"><button class="btn ghost" id="btn-refresh-report" type="button">Làm mới kết quả kiểm tra</button></div>
+        </div>
+
+        <div id="completion-report"></div>
+
+        <div class="card" style="margin-top:var(--sp-2);">
+          <h3>Nộp bài</h3>
+          <p class="instr">Nhập tên để thầy/cô biết bài này là của em. Em có thể quay lại chỉnh sửa và nộp lại bất cứ lúc nào.</p>
+          <div style="display:flex; gap:var(--sp-3); flex-wrap:wrap; margin-bottom:var(--sp-3);">
+            <input type="text" id="submit-name" placeholder="Họ và tên" style="flex:1; min-width:180px;">
+            <input type="text" id="submit-class" placeholder="Lớp" style="width:140px;">
+          </div>
+          <div class="btn-row">
+            <button class="btn" id="btn-submit-final" disabled>Nộp bài</button>
+          </div>
+          <div id="submit-status" style="margin-top:var(--sp-3); font-size:.92rem;"></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div id="teacher-panel" hidden style="margin-top:var(--sp-6); border-top:2px dashed var(--border); padding-top:var(--sp-5);">
+    <h2>Bảng theo dõi nộp bài <span style="font-weight:400; color:var(--ink-faint); font-size:.7em;">(dành cho giáo viên)</span></h2>
+    <div class="btn-row"><button class="btn ghost" id="btn-refresh-teacher" type="button">Làm mới danh sách</button></div>
+    <div id="teacher-table" style="overflow-x:auto; margin-top:var(--sp-3);"></div>
+  </div>
+
+  <footer class="page-foot">
+    <span>Bài làm (trừ khi đã bấm Nộp bài) được lưu tự động trên trình duyệt này — mở lại đúng máy/trình duyệt này để thấy lại bài đã làm. Khi bấm "Nộp bài" ở Trạm 6, tên, lớp và bài làm của em được gửi vào danh sách chung để thầy/cô xem.</span>
+    <span style="display:flex; gap:var(--sp-2); flex:none;">
+      <button class="btn ghost" id="btn-toggle-teacher" style="flex:none;">Xem danh sách đã nộp (GV)</button>
+      <button class="btn ghost" id="btn-reset-all" style="flex:none;">Xoá toàn bộ tiến trình</button>
+    </span>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var LS_PREFIX = "bai2-phuongtien-v1:";
+
+  function lsGet(key, fallback){
+    try{ var v = localStorage.getItem(LS_PREFIX+key); return v===null? fallback : JSON.parse(v); }
+    catch(e){ return fallback; }
+  }
+  function lsSet(key, value){
+    try{ localStorage.setItem(LS_PREFIX+key, JSON.stringify(value)); }catch(e){}
+  }
+
+  /* ============ DATA ============ */
+  var vocab1 = [
+    ["還是","háishì","có lẽ nên, tốt hơn là (nên)"],
+    ["早","zǎo","chào buổi sáng"],
+    ["約","yuē","hẹn"],
+    ["對面","duìmiàn","bên kia, đối diện, trước mặt, phía trước"],
+    ["直接","zhíjiē","trực tiếp, thẳng, thẳng tới"],
+    ["不必","búbì","không phải/cần"],
+    ["換","huàn","đổi (chuyến)"],
+    ["車站","chēzhàn","bến xe, ga tàu"],
+    ["麻煩","máfán","rối, rắc rối, rườm rà"],
+    ["趕快","gǎnkuài","mau, ngay (khẩn cấp)"],
+    ["走","zǒu","đi, rời đi/khỏi"],
+    ["班次","bāncì","chuyến"],
+    ["禮拜","lǐbài","tuần"],
+    ["見","jiàn","gặp, gặp nhau"],
+    ["電腦展","diànnǎozhǎn","triển lãm máy tính"],
+    ["世貿展覽館","Shìmào Zhǎnlǎnguǎn","phòng triển lãm Trung tâm Thương mại Thế giới"],
+    ["展覽館","zhǎnlǎnguǎn","phòng triển lãm"],
+    ["台北101","Táiběi yī líng yī","Đài Bắc 101 (tòa nhà cao nhất Đài Loan)"],
+    ["台北","Táiběi","Đài Bắc"],
+    ["2號線","èr hào xiàn","tuyến (số) 2"],
+    ["別急","bié jí","đừng vội, không cần gấp"]
+  ];
+  var vocab2 = [
+    ["飛機","fēijī","máy bay"],
+    ["轉機","zhuǎnjī","đổi chuyến bay"],
+    ["機場","jīchǎng","sân bay"],
+    ["巴士","bāshì","xe buýt"],
+    ["市區","shìqū","nội thành"],
+    ["下","xià","xuống (xe)"],
+    ["交通","jiāotōng","giao thông"],
+    ["便利","biànlì","tiện, thuận tiện"],
+    ["到處","dàochù","khắp nơi, mọi nơi"],
+    ["路線","lùxiàn","tuyến, tuyến đường"],
+    ["複雜","fùzá","phức tạp"],
+    ["輕鬆","qīngsōng","ung dung, thoải mái, dễ dàng"],
+    ["東部","dōngbù","miền Đông, Đông Bộ"],
+    ["海邊","hǎibiān","bờ biển"],
+    ["島","dǎo","đảo, hòn đảo"],
+    ["搭","dā","đi, đáp (phương tiện)"],
+    ["船","chuán","tàu thủy, thuyền"],
+    ["地","de","một cách, mà (trợ từ)"],
+    ["美美","Měiměi","Mỹ Mỹ (tên riêng)"],
+    ["法國","Fǎguó","nước Pháp"],
+    ["歐洲","Ōuzhōu","châu Âu"],
+    ["悠遊卡","Yōuyóukǎ","thẻ Du Du (thẻ giao thông ở Đài Loan)"],
+    ["綠島","Lǜdǎo","đảo Xanh (Lục Đảo)"],
+    ["東南邊","dōngnán biān","phía Đông Nam"],
+    ["好好地","hǎohǎo de","thỏa thích, thật kỹ"]
+  ];
+
+  /* Mỗi câu dùng nghĩa của từ tương ứng trong vocab1/vocab2 (theo đúng thứ tự) — [câu tiếng Việt, câu gợi ý tiếng Trung] */
+  var translateVocab1 = [
+    ["Trời mưa to, chúng ta nên ở nhà thôi.","外面雨很大，我們還是在家吧。"],
+    ["Chào buổi sáng, hôm nay bạn định đi đâu?","早，你今天要去哪裡？"],
+    ["Tôi đã hẹn bạn cùng đi xem phim.","我跟朋友約了一起去看電影。"],
+    ["Bến xe buýt ở ngay bên kia đường.","公車站就在對面。"],
+    ["Xe buýt này đi thẳng đến sân bay, không cần đổi xe.","這班巴士直接到機場，不必換車。"],
+    ["Bạn không cần lo lắng, tôi sẽ giúp bạn.","你不必擔心，我會幫你。"],
+    ["Bạn phải đổi xe ở ga Đài Bắc.","你得在台北車站換車。"],
+    ["Ga tàu điện cách đây không xa.","捷運車站離這裡不遠。"],
+    ["Nghe có vẻ đi tàu điện phiền phức hơn.","聽起來坐捷運比較麻煩。"],
+    ["Sắp trễ giờ rồi, chúng ta mau đi thôi.","快遲到了，我們趕快走吧。"],
+    ["Đừng vội, đi chậm một chút.","別急，走慢一點。"],
+    ["Chuyến tàu điện rất nhiều, không cần vội.","捷運的班次很多，不用急。"],
+    ["Tuần sau chúng ta gặp lại nhé.","下禮拜我們再見。"],
+    ["Tuần sau anh em mình gặp nhau.","下禮拜我們見面。"],
+    ["Cô ấy muốn đi xem triển lãm máy tính.","她想去看電腦展。"],
+    ["Triển lãm đó tổ chức ở Trung tâm Thương mại Thế giới.","那個展覽在世貿展覽館舉行。"],
+    ["Phòng triển lãm ở rất xa nhà tôi.","展覽館離我家很遠。"],
+    ["Đài Bắc 101 là tòa nhà cao nhất Đài Loan.","台北101是台灣最高的大樓。"],
+    ["Tôi sống ở Đài Bắc hai năm rồi.","我住在台北兩年了。"],
+    ["Bạn ngồi tuyến số 2 là đến.","你坐2號線就到了。"],
+    ["Đừng vội, chuyến xe buýt còn nhiều.","別急，巴士的班次還很多。"]
+  ];
+  var translateVocab2 = [
+    ["Cô ấy đi máy bay từ Pháp đến Việt Nam.","她坐飛機從法國到越南。"],
+    ["Cô ấy phải đổi chuyến bay ở Việt Nam.","她得在越南轉機。"],
+    ["Sân bay cách nội thành khá xa.","機場離市區不太近。"],
+    ["Từ sân bay có thể đi xe buýt thẳng vào nội thành.","從機場可以直接坐巴士到市區。"],
+    ["Nội thành Đài Bắc có rất nhiều cửa hàng tiện lợi.","台北市區有很多超商。"],
+    ["Cô ấy xuống xe buýt rồi đi tàu điện.","她下了巴士就坐捷運。"],
+    ["Giao thông ở Đài Bắc rất tiện lợi.","台北的交通很便利。"],
+    ["Có thẻ Du Du thì đi đâu cũng tiện.","有悠遊卡去哪裡都很便利。"],
+    ["Cầm thẻ Du Du có thể đi khắp nơi.","拿著悠遊卡可以到處去。"],
+    ["Tuyến đường tàu điện Đài Bắc không phức tạp.","台北捷運的路線不複雜。"],
+    ["Tuyến xe buýt ở đây khá phức tạp.","這裡的巴士路線比較複雜。"],
+    ["Có thẻ giao thông rồi thì đi lại rất thoải mái.","有了交通卡，出門就很輕鬆。"],
+    ["Phong cảnh miền Đông Đài Loan rất đẹp.","台灣東部的風景很美。"],
+    ["Cuối tuần chúng tôi thường đi biển chơi.","週末我們常常去海邊玩。"],
+    ["Đài Loan gần biển có rất nhiều đảo nhỏ.","台灣附近有很多小島。"],
+    ["Cô ấy phải đi tàu thủy đến đảo Xanh.","她得搭船到綠島。"],
+    ["Đi tàu thủy ra đảo mất khoảng hai tiếng.","坐船到島上要花兩個小時。"],
+    ["Mọi người vui vẻ cùng nhau ăn cơm.","大家開開心心地吃飯。"],
+    ["Mỹ Mỹ là bạn của Như Ngọc.","美美是如玉的朋友。"],
+    ["Cô ấy đến từ nước Pháp.","她從法國來。"],
+    ["Cô ấy bay từ châu Âu đến châu Á.","她從歐洲坐飛機到亞洲。"],
+    ["Mua một cái thẻ Du Du là có thể đi khắp Đài Bắc.","買一張悠遊卡就可以逛遍台北。"],
+    ["Đảo Xanh ở phía Đông Nam Đài Loan.","綠島在台灣的東南邊。"],
+    ["Đảo Xanh nằm ở phía Đông Nam.","綠島在東南邊。"],
+    ["Cô ấy định đi đảo Xanh chơi thật thỏa thích.","她打算到綠島好好地玩一玩。"]
+  ];
+
+  var distinguish = [
+    ["「坐公車去展覽館要一個多小時，坐捷運＿麻煩。」(khẳng định dứt khoát: không phiền chút nào)","一點也不","不太"],
+    ["「這幾天天氣＿好，你要多穿一點衣服。」(phủ định nhẹ, lịch sự)","不太","一點也不"],
+    ["「他今天心情不好，說什麼都＿高興。」(phủ định tuyệt đối)","一點也不","不太"],
+    ["「這道菜＿辣，你可以放心吃。」(phủ định nhẹ)","不太","一點也不"],
+    ["「去綠島的船票＿貴，大家都買得起。」(phủ định tuyệt đối, nhấn mạnh hoàn toàn không đắt)","一點也不","不太"]
+  ];
+
+  var aabbWords = [
+    {word:"輕鬆", group:"co"}, {word:"漂亮", group:"co"}, {word:"舒服", group:"co"}, {word:"乾淨", group:"co"},
+    {word:"開心", group:"co"}, {word:"快樂", group:"co"}, {word:"客氣", group:"co"},
+    {word:"便宜", group:"khong"}, {word:"好看", group:"khong"}, {word:"傳統", group:"khong"}, {word:"難看", group:"khong"},
+    {word:"好玩", group:"khong"}, {word:"麻煩", group:"khong"}, {word:"不錯", group:"khong"}, {word:"便利", group:"khong"},
+    {word:"可怕", group:"khong"}, {word:"年輕", group:"khong"}, {word:"好喝", group:"khong"}, {word:"有名", group:"khong"},
+    {word:"方便", group:"khong"}, {word:"特別", group:"khong"}, {word:"討厭", group:"khong"}
+  ];
+
+  var dialogueLines = [
+    ["如玉","安同，{{早}}！你要去哪裡？","Āntóng, {{zǎo}}! Nǐ yào qù nǎlǐ?"],
+    ["安同","早！我{{約}}了朋友一起去看電影，你呢？","Zǎo! Wǒ {{yuē}}le péngyǒu yīqǐ qù kàn diànyǐng, nǐ ne?"],
+    ["如玉","我要去看{{電腦展}}。","Wǒ yào qù kàn {{diànnǎozhǎn}}."],
+    ["安同","你去哪裡看電腦展？","Nǐ qù nǎlǐ kàn diànnǎozhǎn?"],
+    ["如玉","{{世貿展覽館}}，我現在要去{{對面}}坐公車。","{{Shìmào Zhǎnlǎnguǎn}}, wǒ xiànzài yào qù {{duìmiàn}} zuò gōngchē."],
+    ["安同","那裡離台北101不遠，妳怎麼不坐捷運呢？","Nàlǐ lí Táiběi yī líng yī bù yuǎn, nǐ zěnme bù zuò jiéyùn ne?"],
+    ["如玉","朋友告訴我公車{{直接}}到展覽館，{{不必}}{{換}}車。","Péngyǒu gàosù wǒ gōngchē {{zhíjiē}} dào zhǎnlǎnguǎn, {{búbì}} {{huàn}} chē."],
+    ["安同","坐捷運也很方便。妳先坐{{2號線}}到台北{{車站}}，再換車到展覽館。","Zuò jiéyùn yě hěn fāngbiàn. Nǐ xiān zuò {{èr hào xiàn}} dào Táiběi {{chēzhàn}}, zài huàn chē dào zhǎnlǎnguǎn."],
+    ["如玉","聽起來坐捷運比較{{麻煩}}。","Tīngqǐlái zuò jiéyùn bǐjiào {{máfán}}."],
+    ["安同","一點也不麻煩，捷運比較快，坐公車要花一個多小時。你{{還是}}坐捷運吧！","Yīdiǎn yě bù máfán, jiéyùn bǐjiào kuài, zuò gōngchē yào huā yī gè duō xiǎoshí. Nǐ {{háishì}} zuò jiéyùn ba!"],
+    ["如玉","捷運站遠嗎？","Jiéyùn zhàn yuǎn ma?"],
+    ["安同","捷運站就在前面。","Jiéyùn zhàn jiù zài qiánmiàn."],
+    ["如玉","謝謝！我得{{趕快}}{{走}}了。","Xièxie! Wǒ děi {{gǎnkuài}} {{zǒu}} le."],
+    ["安同","{{別急}}，走慢一點。捷運的{{班次}}很多。","{{Bié jí}}, zǒu màn yīdiǎn. Jiéyùn de {{bāncì}} hěn duō."],
+    ["如玉","好，我們下{{禮拜}}{{見}}。","Hǎo, wǒmen xià {{lǐbài}} {{jiàn}}."]
+  ];
+
+  var passage = "如玉的朋友美美從法國到台灣來玩兩個禮拜，她先從歐洲坐飛機到越南，再轉機到台灣。到了機場，美美直接坐巴士到台北。如玉告訴她，在市區坐捷運是最方便的，所以她下了巴士，就坐捷運到旅館去了。美美覺得台北的交通非常便利，到處都有公車、計程車，還有捷運，去哪裡都很方便。台北捷運的路線不複雜，車票也不貴，買一張悠遊卡，誰都可以輕輕鬆鬆地去逛逛。美美住在法國東部，沒有什麼機會到海邊，聽說台灣附近的小島，風景都很美，所以她決定到綠島去看看。綠島在台灣的東南邊，到那裡不太方便，美美得先坐火車到台東，再搭船或是飛機到綠島。她打算第二個星期去綠島，好好地玩一玩。";
+  var passagePinyinPairs = [
+    ["如玉的朋友美美從法國到台灣來玩兩個禮拜，她先從歐洲坐飛機到越南，再轉機到台灣。","Rúyù de péngyǒu Měiměi cóng Fǎguó dào Táiwān lái wán liǎng gè lǐbài, tā xiān cóng Ōuzhōu zuò fēijī dào Yuènán, zài zhuǎnjī dào Táiwān."],
+    ["到了機場，美美直接坐巴士到台北。","Dàole jīchǎng, Měiměi zhíjiē zuò bāshì dào Táiběi."],
+    ["如玉告訴她，在市區坐捷運是最方便的，所以她下了巴士，就坐捷運到旅館去了。","Rúyù gàosù tā, zài shìqū zuò jiéyùn shì zuì fāngbiàn de, suǒyǐ tā xiàle bāshì, jiù zuò jiéyùn dào lǚguǎn qù le."],
+    ["美美覺得台北的交通非常便利，到處都有公車、計程車，還有捷運，去哪裡都很方便。","Měiměi juéde Táiběi de jiāotōng fēicháng biànlì, dàochù dōu yǒu gōngchē, jìchéngchē, hái yǒu jiéyùn, qù nǎlǐ dōu hěn fāngbiàn."],
+    ["台北捷運的路線不複雜，車票也不貴，買一張悠遊卡，誰都可以輕輕鬆鬆地去逛逛。","Táiběi jiéyùn de lùxiàn bù fùzá, chēpiào yě bú guì, mǎi yī zhāng Yōuyóukǎ, shéi dōu kěyǐ qīngqīngsōngsōng de qù guàngguang."],
+    ["美美住在法國東部，沒有什麼機會到海邊。","Měiměi zhù zài Fǎguó dōngbù, méiyǒu shénme jīhuì dào hǎibiān."],
+    ["聽說台灣附近的小島，風景都很美，所以她決定到綠島去看看。","Tīngshuō Táiwān fùjìn de xiǎo dǎo, fēngjǐng dōu hěn měi, suǒyǐ tā juédìng dào Lǜdǎo qù kànkan."],
+    ["綠島在台灣的東南邊，到那裡不太方便。","Lǜdǎo zài Táiwān de dōngnán biān, dào nàlǐ bú tài fāngbiàn."],
+    ["美美得先坐火車到台東，再搭船或是飛機到綠島。","Měiměi děi xiān zuò huǒchē dào Táidōng, zài dā chuán huòshì fēijī dào Lǜdǎo."],
+    ["她打算第二個星期去綠島，好好地玩一玩。","Tā dǎsuàn dì-èr gè xīngqí qù Lǜdǎo, hǎohǎo de wán yī wán."]
+  ];
+  var passageSentences = [
+    "如玉的朋友美美從法國到台灣來玩兩個禮拜。",
+    "她先從歐洲坐飛機到越南，再轉機到台灣。",
+    "到了機場，美美直接坐巴士到台北。",
+    "如玉告訴她，在市區坐捷運是最方便的，所以她下了巴士，就坐捷運到旅館去了。",
+    "美美覺得台北的交通非常便利，到處都有公車、計程車，還有捷運，去哪裡都很方便。",
+    "台北捷運的路線不複雜，車票也不貴，買一張悠遊卡，誰都可以輕輕鬆鬆地去逛逛。",
+    "美美住在法國東部，沒有什麼機會到海邊，聽說台灣附近的小島風景都很美，所以她決定到綠島去看看。",
+    "綠島在台灣的東南邊，到那裡不太方便，美美得先坐火車到台東，再搭船或是飛機到綠島，她打算第二個星期去綠島，好好地玩一玩。"
+  ];
+  var readingQuestions = [
+    ["美美從哪裡來台灣？她先坐什麼交通工具到越南，再怎麼到台灣？","美美從法國來台灣；她先坐飛機到越南，再轉機到台灣。"],
+    ["到了機場以後，美美怎麼去台北市區？","她直接坐巴士到台北市區，下了巴士就坐捷運到旅館。"],
+    ["美美覺得台北的交通怎麼樣？她舉了哪些例子？","她覺得台北的交通非常便利；她舉了公車、計程車、捷運，還有悠遊卡的例子。"],
+    ["美美為什麼決定去綠島？她打算怎麼去？","因為她住在法國東部，很少有機會到海邊，聽說台灣附近的小島風景很美，所以決定去綠島；她打算先坐火車到台東，再搭船或飛機到綠島。"],
+    ["(Mở rộng) 你覺得美美的台灣之旅安排得好不好？如果是你，你還會怎麼安排？","(Câu hỏi mở — không có đáp án cố định, viết theo ý em.)"]
+  ];
+  var scenarios = [
+    "Một người bạn vừa xuống sân bay, muốn về nội thành nhanh nhất có thể.",
+    "Một người bạn muốn đi biển/đảo vào cuối tuần, ưu tiên chi phí rẻ.",
+    "Một người bạn mới chuyển đến thành phố, hỏi cách đi làm hằng ngày sao cho tiện lợi.",
+    "Một người bạn muốn đi xem triển lãm ở Trung tâm Thương mại Thế giới, không muốn đổi chuyến nhiều lần.",
+    "Một người bạn muốn đi đảo Xanh chơi, hỏi phương tiện nào nhanh nhất.",
+    "Một người bạn hỏi đường đi từ trường về nhà, muốn phương tiện nào ít tốn thời gian nhất."
+  ];
+  var places = ["đi xem điện ảnh (phương tiện gợi ý: 騎機車)","đi công viên (phương tiện gợi ý: 騎腳踏車)","đi siêu thị (phương tiện gợi ý: 坐計程車)","đi nhà sách (phương tiện gợi ý: 坐巴士)","đi thăm bạn (phương tiện gợi ý: 坐捷運)","đi nhà hàng (phương tiện gợi ý: 坐計程車)"];
+  var rubricItems = [
+    "Có tình huống rõ ràng, đủ so sánh phương tiện + đề nghị lựa chọn",
+    "Dùng đúng ít nhất 2/6 điểm ngữ pháp đã học (bắt buộc có 還是…吧)",
+    "Phát âm rõ, đúng thanh điệu",
+    "Cả nhóm đều tham gia nói, phối hợp tự nhiên"
+  ];
+
+  /* Trạm ga MRT Cao Hùng thật (nguồn: krtc.com.tw, tra cứu 2026) — dùng cho hoạt động bốc thăm địa điểm */
+  var khStations = [
+    {name:"小港", lines:["red"]},
+    {name:"高雄國際機場", lines:["red"]},
+    {name:"前鎮高中", lines:["red"]},
+    {name:"三多商圈", lines:["red"]},
+    {name:"美麗島", lines:["red","orange"]},
+    {name:"高雄車站", lines:["red"]},
+    {name:"巨蛋", lines:["red"]},
+    {name:"左營", lines:["red"]},
+    {name:"楠梓科技園區", lines:["red"]},
+    {name:"岡山車站", lines:["red"]},
+    {name:"哈瑪星", lines:["orange"]},
+    {name:"鹽埕埔", lines:["orange"]},
+    {name:"文化中心", lines:["orange"]},
+    {name:"衛武營", lines:["orange"]},
+    {name:"鳳山", lines:["orange"]},
+    {name:"大寮", lines:["orange"]}
+  ];
+  var khLineLabel = {red:"Đỏ 紅線", orange:"Cam 橘線"};
+
+  /* ---- Nghe hiểu Mức 1: Đúng / Sai (10 câu) ---- */
+  var listeningL1 = [
+    {text:"如玉本來要坐公車去世貿展覽館，後來聽安同的建議，改坐捷運去了。", statement:"Như Ngọc lúc đầu định đi xe buýt đến triển lãm, sau đó nghe lời khuyên của An Đồng đổi sang đi tàu điện.", answer:true},
+    {text:"安同說坐公車比坐捷運快，勸如玉坐公車去。", statement:"An Đồng nói đi xe buýt nhanh hơn đi tàu điện, khuyên Như Ngọc đi xe buýt.", answer:false},
+    {text:"捷運站離世貿展覽館很遠，如玉得走很久。", statement:"Ga tàu điện cách triển lãm rất xa, Như Ngọc phải đi bộ rất lâu.", answer:false},
+    {text:"美美從法國坐飛機到越南，再轉機到台灣。", statement:"Mỹ Mỹ từ Pháp bay thẳng đến Đài Loan, không cần đổi chuyến.", answer:false},
+    {text:"美美覺得台北的交通很複雜，去哪裡都不方便。", statement:"Mỹ Mỹ thấy giao thông ở Đài Bắc rất phức tạp, đi đâu cũng không tiện.", answer:false},
+    {text:"買一張悠遊卡，就可以輕輕鬆鬆地在台北到處逛。", statement:"Chỉ cần mua một thẻ Du Du là có thể thoải mái đi khắp nơi ở Đài Bắc.", answer:true},
+    {text:"美美打算去綠島，因為聽說那裡風景很美。", statement:"Mỹ Mỹ định đi đảo Xanh vì nghe nói phong cảnh ở đó rất đẹp.", answer:true},
+    {text:"去綠島交通很方便，可以直接坐捷運到。", statement:"Đi đảo Xanh giao thông rất tiện, có thể đi thẳng bằng tàu điện.", answer:false},
+    {text:"如玉的朋友美美從法國到台灣來玩兩個禮拜。", statement:"Bạn của Như Ngọc tên là Mỹ Mỹ, đến Đài Loan chơi trong hai tuần.", answer:true},
+    {text:"美美從機場直接坐捷運到台北。", statement:"Mỹ Mỹ từ sân bay đi thẳng bằng tàu điện đến Đài Bắc.", answer:false}
+  ];
+
+  /* ---- Nghe hiểu Mức 2: Trắc nghiệm ABCD (10 câu) ---- */
+  var listeningL2 = [
+    {text:"如玉要去世貿展覽館看電腦展，安同告訴她：『妳先坐2號線到台北車站，再換車到展覽館。』", question:"Theo lời An Đồng, Như Ngọc phải đi mấy chặng tàu điện mới đến triển lãm?", options:["Một chặng","Hai chặng","Ba chặng","Không cần đi tàu điện"], correct:1},
+    {text:"安同說坐公車要花一個多小時，坐捷運比較快，勸如玉還是坐捷運吧。", question:"Vì sao An Đồng khuyên Như Ngọc đi tàu điện?", options:["Vì xe buýt đắt hơn","Vì xe buýt chậm hơn","Vì ga tàu điện ở xa hơn","Vì vé tàu điện rẻ hơn"], correct:1},
+    {text:"美美先從歐洲坐飛機到越南，再轉機到台灣，到了機場，她直接坐巴士到台北。", question:"Trong hành trình đến Đài Bắc, Mỹ Mỹ đã dùng tất cả mấy loại phương tiện?", options:["Một loại","Hai loại","Ba loại","Bốn loại"], correct:1},
+    {text:"美美覺得台北捷運的路線不複雜，車票也不貴，買一張悠遊卡，誰都可以輕輕鬆鬆地去逛逛。", question:"Theo đoạn này, thẻ Du Du có lợi ích gì?", options:["Được đi tàu điện miễn phí","Giúp người dùng thoải mái đi khắp nơi","Chỉ dùng được ở Pháp","Chỉ mua được một lần"], correct:1},
+    {text:"美美住在法國東部，沒有什麼機會到海邊，聽說台灣附近的小島風景都很美，所以她決定到綠島去看看。", question:"Vì sao Mỹ Mỹ muốn đi đảo Xanh?", options:["Vì nhà cô ở Pháp gần biển","Vì cô muốn mua thẻ Du Du","Vì cô ít có cơ hội ra biển, nghe nói đảo nhỏ phong cảnh đẹp","Vì đảo Xanh rất gần nhà cô"], correct:2},
+    {text:"綠島在台灣的東南邊，到那裡不太方便，美美得先坐火車到台東，再搭船或是飛機到綠島。", question:"Từ đất liền Đài Loan ra đảo Xanh, Mỹ Mỹ phải đổi phương tiện ít nhất mấy lần?", options:["Không cần đổi","Một lần (đi thẳng bằng tàu hỏa)","Hai lần (tàu hỏa rồi tàu thủy/máy bay)","Trên ba lần"], correct:2},
+    {text:"如玉：『聽起來坐捷運比較麻煩。』安同：『一點也不麻煩，捷運比較快，坐公車要花一個多小時。』", question:"An Đồng dùng cấu trúc nào để phản bác ý kiến của Như Ngọc?", options:["不太麻煩","一點也不麻煩","還是麻煩吧","麻煩一點"], correct:1},
+    {text:"安同說：『捷運站就在前面，別急，走慢一點，捷運的班次很多。』", question:"Vì sao An Đồng bảo Như Ngọc \"đừng vội\"?", options:["Vì tàu điện còn rất lâu mới đến","Vì ga tàu điện rất xa","Vì tàu điện có nhiều chuyến, không cần vội","Vì Như Ngọc đi quá nhanh"], correct:2},
+    {text:"美美打算第二個星期去綠島，好好地玩一玩。", question:"Mỹ Mỹ dự định đi đảo Xanh vào lúc nào?", options:["Tuần thứ nhất","Tuần thứ hai","Ngay hôm đến Đài Loan","Không nói rõ"], correct:1},
+    {text:"美美從法國到台灣來玩兩個禮拜，她先從歐洲坐飛機到越南，再轉機到台灣。", question:"Chuyến đi này của Mỹ Mỹ dự kiến kéo dài bao lâu?", options:["Một tuần","Hai tuần","Một tháng","Không nói rõ"], correct:1}
+  ];
+
+  /* ---- Nghe hiểu Mức 3: Phân tích (10 câu, tự luận) ---- */
+  var listeningL3 = [
+    {text:"如玉說『聽起來坐捷運比較麻煩』，安同卻說『一點也不麻煩』。", question:"Vì sao hai người lại có đánh giá trái ngược nhau về việc đi tàu điện? Điều này cho thấy gì về việc đánh giá phương tiện giao thông?", sample:"Như Ngọc chưa từng đi tuyến đó nên chỉ 'nghe nói' (聽起來) cảm thấy có vẻ rắc rối vì phải đổi tuyến; còn An Đồng có kinh nghiệm thực tế nên khẳng định dứt khoát. Điều này cho thấy đánh giá về sự tiện lợi của phương tiện giao thông phụ thuộc nhiều vào kinh nghiệm cá nhân, không phải lúc nào ấn tượng ban đầu cũng đúng."},
+    {text:"安同勸如玉『妳還是坐捷運吧』，並沒有說『妳一定要坐捷運』。", question:"So sánh cách nói 『還是…吧』với việc ra lệnh trực tiếp『一定要…』— vì sao An Đồng chọn cách nói nhẹ nhàng hơn?", sample:"『還是…吧』chỉ đưa ra đề nghị/lựa chọn tốt nhất theo ý người nói, để người nghe vẫn có quyền quyết định, giữ được sự lịch sự và tôn trọng; trong khi 『一定要』mang tính áp đặt, dễ gây khó chịu, nhất là giữa bạn bè."},
+    {text:"美美先從歐洲坐飛機到越南，再轉機到台灣。", question:"Vì sao Mỹ Mỹ phải bay qua Việt Nam rồi mới chuyển chuyến đến Đài Loan, thay vì bay thẳng từ Pháp?", sample:"(Câu hỏi suy luận, mở) Có thể vì không có chuyến bay thẳng từ Pháp đến Đài Loan tại thời điểm đó, hoặc giá vé transit qua Việt Nam rẻ hơn — đây là điều rất phổ biến trong các chuyến bay quốc tế đường dài, hành khách thường phải transit qua một nước thứ ba."},
+    {text:"美美覺得台北的交通非常便利，到處都有公車、計程車，還有捷運，去哪裡都很方便。", question:"Đoạn này liệt kê 3 loại phương tiện (公車、計程車、捷運) để chứng minh cho nhận định nào? Cách liệt kê này có tác dụng gì trong bài viết?", sample:"3 loại phương tiện được liệt kê để làm bằng chứng cụ thể cho nhận định tổng quát 'giao thông rất tiện lợi' ở đầu câu — đây là kỹ thuật viết: nêu nhận định trước, sau đó đưa dẫn chứng cụ thể để thuyết phục người đọc, thay vì chỉ nói chung chung."},
+    {text:"台北捷運的路線不複雜，車票也不貴，買一張悠遊卡，誰都可以輕輕鬆鬆地去逛逛。", question:"Vì sao tác giả nhấn mạnh cả 3 yếu tố: đường tuyến không phức tạp, vé không đắt, và có thẻ Du Du? 3 yếu tố này có liên quan gì đến cảm giác 輕鬆 (thoải mái) được nhắc ở cuối câu không?", sample:"3 yếu tố (dễ hiểu, giá rẻ, tiện lợi khi thanh toán) chính là 3 điều kiện cần để một hệ thống giao thông công cộng khiến người dùng cảm thấy thoải mái — thiếu 1 trong 3 (ví dụ tuyến phức tạp dù giá rẻ) thì trải nghiệm vẫn không 'nhẹ nhàng'. Câu văn xây dựng logic nhân-quả rõ ràng."},
+    {text:"美美住在法國東部，沒有什麼機會到海邊。", question:"Chi tiết 'sống ở Đông Bộ nước Pháp, ít có cơ hội ra biển' có vai trò gì trong việc giải thích quyết định đi đảo Xanh của Mỹ Mỹ sau đó?", sample:"Đây là chi tiết lý giải động cơ cá nhân: chính vì thiếu trải nghiệm biển ở quê nhà nên khi nghe nói các đảo nhỏ gần Đài Loan phong cảnh đẹp, Mỹ Mỹ mới đặc biệt muốn tận dụng chuyến đi này để ra đảo — nếu bỏ chi tiết này, quyết định đi đảo Xanh sẽ có vẻ đột ngột, thiếu động cơ rõ ràng."},
+    {text:"綠島在台灣的東南邊，到那裡不太方便。", question:"Vì sao đoạn văn dùng 『不太方便』(không quá tiện) thay vì phủ định mạnh hơn như 『一點也不方便』(không tiện chút nào) khi mô tả việc đi đảo Xanh?", sample:"Đi đảo Xanh có phần bất tiện hơn di chuyển trong nội thành (phải đổi 2 chặng: tàu hỏa rồi tàu thủy/máy bay) nhưng vẫn là điều hoàn toàn khả thi và Mỹ Mỹ vẫn quyết định đi — dùng phủ định nhẹ 不太 phản ánh đúng mức độ bất tiện tương đối, không đến mức không thể thực hiện được như 一點也不方便 sẽ ngụ ý."},
+    {text:"美美打算第二個星期去綠島，好好地玩一玩。", question:"Vì sao Mỹ Mỹ lên kế hoạch đi đảo Xanh vào tuần thứ hai mà không phải ngay khi vừa đến Đài Loan?", sample:"(Câu hỏi suy luận, mở) Có thể vì tuần đầu tiên cô ấy cần thời gian làm quen với Đài Bắc, nghỉ ngơi sau chuyến bay dài, hoặc thu xếp phương tiện/đặt vé tàu-thuyền đi đảo Xanh trước — việc để dành hoạt động xa và phức tạp hơn (ra đảo) cho tuần sau cho thấy cách sắp xếp lịch trình du lịch hợp lý, từ gần đến xa, từ đơn giản đến phức tạp."},
+    {text:"如玉：『捷運站遠嗎？』安同：『捷運站就在前面。』如玉：『謝謝！我得趕快走了。』安同：『別急，走慢一點，捷運的班次很多。』", question:"An Đồng khuyên Như Ngọc 『đi chậm một chút』ngay sau khi Như Ngọc nói 『phải đi nhanh』— hai thái độ này có mâu thuẫn không? Vì sao?", sample:"Không hẳn mâu thuẫn — Như Ngọc vội vì nghĩ sắp trễ, nhưng An Đồng trấn an bằng lý do cụ thể (tàu điện có nhiều chuyến, không cần vội) để điều chỉnh lại cảm nhận của Như Ngọc về thời gian. Đây là cách an ủi bạn bè dựa trên thông tin thực tế, không phải chỉ nói suông."},
+    {text:"美美覺得台北的交通非常便利…綠島在台灣的東南邊，到那裡不太方便。", question:"So sánh cách mô tả giao thông trong nội thành Đài Bắc và cách mô tả giao thông đến đảo Xanh trong cùng một đoạn văn — sự đối lập này nhằm mục đích gì?", sample:"Sự đối lập (nội thành rất tiện >< ra đảo không quá tiện) giúp người đọc thấy rõ hai bối cảnh giao thông khác nhau trong cùng một chuyến đi, đồng thời ngầm giải thích vì sao Mỹ Mỹ cần lên kế hoạch kỹ hơn và dành riêng cả một tuần cho việc ra đảo Xanh, thay vì đi trong ngày như dạo phố ở Đài Bắc."}
+  ];
+
+  /* ============ ROUTE NAV ============ */
+  var tietNames = ["Từ vựng I & Hội thoại","Từ vựng II & Đoạn văn","Ngữ pháp nhóm A","Ngữ pháp nhóm B","Nghe hiểu (30 câu)","Dự án nói","Tổng kết & Nộp bài"];
+  var rail = document.getElementById("rail");
+
+  function buildRail(){
+    for(var i=0;i<tietNames.length;i++){
+      (function(i){
+        var btn = document.createElement("button");
+        btn.className = "stop"; btn.type="button";
+        btn.setAttribute("data-idx", i);
+        btn.innerHTML = '<span class="pin">'+(i+1)+'</span><span class="stop-label"><span class="stop-num">Trạm '+(i+1)+'</span><span class="stop-name">'+tietNames[i]+'</span></span>';
+        btn.addEventListener("click", function(){ goTo(i); });
+        rail.insertBefore(btn, rail.querySelector(".rail-foot"));
+      })(i);
+    }
+  }
+  var currentIdx = lsGet("currentIdx", 0);
+  function goTo(i){
+    currentIdx = i; lsSet("currentIdx", i);
+    document.querySelectorAll(".stage-section").forEach(function(s,si){ s.classList.toggle("active", si===i); });
+    rail.querySelectorAll(".stop").forEach(function(b,bi){ b.setAttribute("aria-current", bi===i? "true":"false"); });
+    if(i===6) renderCompletionReport();
+    window.scrollTo({top:0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto':'smooth'});
+  }
+
+  /* ============ TRẠNG THÁI HOÀN THÀNH (theo dõi đã điền / chưa điền) ============ */
+  var progressData = {
+    quizDone: {},                // key -> true khi HS xem trang kết quả (đã làm hết bộ câu hỏi)
+    quizScore: {},                // key -> {score, total} của lần làm gần nhất
+    listenAnswered: { l1: [], l2: [] }, // mảng boolean theo từng câu, đánh dấu true khi HS đã bấm 1 đáp án
+    classifyAnswered: { aabb: [] }  // mảng boolean theo từng từ, đánh dấu true khi HS đã bấm 1 lựa chọn phân loại
+  };
+
+  /* ============ VOCAB QUIZ ============ */
+  function shuffle(arr){
+    var a = arr.slice();
+    for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
+    return a;
+  }
+  function initVocabQuiz(root, data, key){
+    var order = shuffle(data.map(function(_,i){return i;}));
+    var pos = 0, score = 0, missed = [];
+    function renderQuestion(){
+      if(pos>=order.length){ renderSummary(); return; }
+      var item = data[order[pos]];
+      var distractors = shuffle(data.filter(function(d){return d!==item;})).slice(0,3).map(function(d){return d[2];});
+      var options = shuffle([item[2]].concat(distractors));
+      var html = '<div class="quiz-card">'+
+        '<div class="quiz-progress">Câu '+(pos+1)+'/'+order.length+' &nbsp;·&nbsp; Điểm: '+score+'</div>'+
+        '<div class="quiz-han">'+item[0]+'</div>'+
+        '<div class="quiz-pinyin">'+item[1]+'</div>'+
+        '<div class="quiz-options">'+options.map(function(o){return '<button type="button" class="opt" data-val="'+o.replace(/"/g,'&quot;')+'">'+o+'</button>';}).join('')+'</div>'+
+        '</div>';
+      root.innerHTML = html;
+      root.querySelectorAll(".opt").forEach(function(b){
+        b.addEventListener("click", function(){
+          var ok = b.getAttribute("data-val")===item[2];
+          root.querySelectorAll(".opt").forEach(function(o){
+            o.setAttribute("disabled","");
+            if(o.getAttribute("data-val")===item[2]) o.classList.add("correct");
+          });
+          if(!ok) b.classList.add("wrong"); else score++;
+          if(!ok) missed.push(item);
+          var next = document.createElement("div");
+          next.className="btn-row"; next.style.justifyContent="center"; next.style.marginTop="var(--sp-4)";
+          next.innerHTML = '<button class="btn" type="button">'+(pos+1<order.length? "Câu tiếp theo":"Xem kết quả")+'</button>';
+          next.querySelector("button").addEventListener("click", function(){ pos++; renderQuestion(); });
+          root.querySelector(".quiz-card").appendChild(next);
+        });
+      });
+    }
+    function renderSummary(){
+      var pct = Math.round(score/order.length*100);
+      progressData.quizDone[key] = true;
+      progressData.quizScore[key] = {score:score, total:order.length};
+      scheduleRefresh();
+      var html = '<div class="quiz-card"><div class="quiz-summary">'+
+        '<p style="font-family:var(--font-display); font-weight:700; font-size:1.05rem;">Kết quả: <span class="score-pill">'+score+'/'+order.length+' ('+pct+'%)</span></p>'+
+        (missed.length? '<p>Những từ cần ôn lại thêm:</p><ul>'+missed.map(function(m){return '<li><span class="han">'+m[0]+'</span> ('+m[1]+') — '+m[2]+'</li>';}).join('')+'</ul>' : '<p>Xuất sắc — em nhớ hết cả bộ từ này rồi! 🎉</p>')+
+        '</div><div class="btn-row" style="justify-content:center;"><button class="btn ghost ret" type="button">Làm lại từ đầu</button></div></div>';
+      root.innerHTML = html;
+      root.querySelector(".ret").addEventListener("click", function(){
+        order = shuffle(data.map(function(_,i){return i;})); pos=0; score=0; missed=[]; renderQuestion();
+      });
+    }
+    renderQuestion();
+  }
+  initVocabQuiz(document.getElementById("quiz-distinguish"), distinguish, "distinguish");
+
+  /* ============ CLOZE ============ */
+  function buildClozeLines(){
+    document.querySelectorAll(".cloze-line[data-tmpl]").forEach(function(el){
+      var tmpl = el.getAttribute("data-tmpl");
+      var vi = el.querySelector(".vi");
+      var viHtml = vi ? vi.outerHTML : "";
+      var body = tmpl.replace(/\{\{(.*?)\}\}/g, function(m, ans){
+        var w = Math.max(ans.length*1.3, 2.4);
+        return '<input type="text" class="blank" data-answer="'+ans+'" style="width:'+w+'em" autocomplete="off" spellcheck="false" aria-label="Điền từ còn thiếu">';
+      });
+      el.innerHTML = body + viHtml;
+    });
+  }
+  function buildDialogue(){
+    var box = document.getElementById("cloze-dialogue");
+    var html = "";
+    dialogueLines.forEach(function(line, lineIdx){
+      var body = line[1].replace(/\{\{(.*?)\}\}/g, function(m, ans){
+        var w = Math.max(ans.length*1.3, 2.4);
+        return '<input type="text" class="blank" data-answer="'+ans+'" style="width:'+w+'em" autocomplete="off" spellcheck="false" aria-label="Điền từ còn thiếu">';
+      });
+      var pinyinHtml = "";
+      if(line[2]){
+        pinyinHtml = '<span class="pinyin-line">'+line[2].replace(/\{\{(.*?)\}\}/g, "(…)")+'</span>';
+      }
+      html += '<div class="dlg-line"><span class="dlg-who">'+line[0]+'</span><span class="cloze-line">'+body+'</span>'+pinyinHtml+'</div>'+
+        '<textarea data-store="dlgtrans-'+lineIdx+'" style="min-height:2.2em; margin:0 0 var(--sp-3) var(--sp-5);" placeholder="Dịch câu này sang tiếng Việt…"></textarea>';
+    });
+    box.innerHTML = html;
+  }
+  function buildOpenList(container, arr, kind){
+    var html = "";
+    arr.forEach(function(q, i){
+      html += '<div style="margin-bottom:var(--sp-3);"><p class="instr" style="margin-bottom:.3em;">'+(i+1)+'. '+(kind==="han"? '<span class="han">'+q+'</span>' : q)+'</p><textarea data-store="open-'+container.id+'-'+i+'" style="min-height:3.2em;"></textarea></div>';
+    });
+    container.innerHTML = html;
+  }
+  buildClozeLines();
+  buildDialogue();
+
+  /* ============ TRẮC NGHIỆM TỪ VỰNG + DỊCH CÂU (kết hợp, đúng thứ tự giáo trình) ============ */
+  function initVocabTranslateList(root, vocabArr, sentenceArr, key, prefix){
+    var answered = vocabArr.map(function(){ return false; });
+    var correctCount = 0;
+    function updateStatus(){
+      var statusEl = root.querySelector(".vt-status");
+      var doneCount = answered.filter(function(v){return v;}).length;
+      if(statusEl) statusEl.textContent = "Trắc nghiệm đã làm: "+doneCount+"/"+vocabArr.length+(doneCount? (" · Đúng: "+correctCount):"");
+      progressData.quizScore[key] = {score: correctCount, total: vocabArr.length};
+      progressData.quizDone[key] = doneCount===vocabArr.length;
+    }
+    var html = '<p class="vt-status instr" style="font-weight:600;"></p>';
+    vocabArr.forEach(function(word, i){
+      var distractors = shuffle(vocabArr.filter(function(d){return d!==word;})).slice(0,3).map(function(d){return d[2];});
+      var options = shuffle([word[2]].concat(distractors));
+      html += '<div class="card" style="margin-bottom:var(--sp-3); background:var(--surface-2); box-shadow:none;" data-vt-item="'+i+'">'+
+        '<p class="instr" style="margin:0 0 .3em;"><b>'+(i+1)+'.</b> <span class="han" style="font-weight:700; font-size:1.1rem;">'+word[0]+'</span> <span style="color:var(--ink-faint); font-size:.85rem;">('+word[1]+')</span> nghĩa là gì?</p>'+
+        '<div class="quiz-options" data-vt-mc="'+i+'">'+options.map(function(o){return '<button type="button" class="opt" data-val="'+o.replace(/"/g,"&quot;")+'">'+o+'</button>';}).join('')+'</div>'+
+        '<p class="instr" style="margin:var(--sp-3) 0 .3em;">Dịch câu sau sang tiếng Trung, cố gắng dùng đúng từ trên:</p>'+
+        '<p class="instr" style="margin:0 0 .4em;">'+sentenceArr[i][0]+'</p>'+
+        '<textarea data-store="'+prefix+i+'" style="min-height:2.6em;" placeholder="Dịch sang tiếng Trung…"></textarea>'+
+      '</div>';
+    });
+    root.innerHTML = html;
+    root.querySelectorAll("[data-vt-mc]").forEach(function(box){
+      var i = parseInt(box.getAttribute("data-vt-mc"),10);
+      box.querySelectorAll(".opt").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          if(answered[i]) return;
+          var ok = btn.getAttribute("data-val")===vocabArr[i][2];
+          box.querySelectorAll(".opt").forEach(function(o){
+            o.setAttribute("disabled","");
+            if(o.getAttribute("data-val")===vocabArr[i][2]) o.classList.add("correct");
+          });
+          if(!ok) btn.classList.add("wrong"); else correctCount++;
+          answered[i] = true;
+          updateStatus();
+          scheduleRefresh();
+        });
+      });
+    });
+    updateStatus();
+  }
+  initVocabTranslateList(document.getElementById("vt-vocab1"), vocab1, translateVocab1, "vocab1", "translate1-");
+  initVocabTranslateList(document.getElementById("vt-vocab2"), vocab2, translateVocab2, "vocab2", "translate2-");
+
+  function wireClozeBlocks(){
+    document.querySelectorAll(".cloze-block").forEach(function(block){
+      var status = block.parentElement.querySelector("[data-status]");
+      var checkBtn = block.parentElement.querySelector('[data-action="check"]');
+      var resetBtn = block.parentElement.querySelector('[data-action="reset"]');
+      if(checkBtn) checkBtn.addEventListener("click", function(){
+        var blanks = block.querySelectorAll(".blank");
+        var correct = 0;
+        blanks.forEach(function(inp){
+          inp.classList.remove("revealed");
+          var ok = inp.value.trim()===inp.getAttribute("data-answer");
+          inp.classList.toggle("correct", ok);
+          inp.classList.toggle("wrong", !ok);
+          if(ok) correct++;
+        });
+        if(status){
+          status.textContent = "Đúng "+correct+"/"+blanks.length;
+          status.className = "cloze-status "+(correct===blanks.length? "ok":"bad");
+        }
+      });
+      if(resetBtn) resetBtn.addEventListener("click", function(){
+        block.querySelectorAll(".blank").forEach(function(inp){
+          inp.value=""; inp.classList.remove("correct","wrong","revealed");
+        });
+        if(status){ status.textContent=""; status.className="cloze-status"; }
+      });
+    });
+  }
+  wireClozeBlocks();
+
+  /* ============ READING ============ */
+  (function(){
+    var box = document.getElementById("passage-text");
+    var html = "";
+    passagePinyinPairs.forEach(function(pair, i){
+      html += '<div class="passage-sentence"><div class="han">'+pair[0]+'</div><div class="pinyin-line">'+pair[1]+'</div>'+
+        '<textarea data-store="passagetrans-'+i+'" style="min-height:2.2em; margin-top:.4em;" placeholder="Dịch câu này sang tiếng Việt…"></textarea>'+
+      '</div>';
+    });
+    box.innerHTML = html;
+  })();
+  document.getElementById("toggle-pinyin-passage").addEventListener("change", function(e){
+    document.getElementById("passage-text").classList.toggle("hide-pinyin", !e.target.checked);
+  });
+  document.getElementById("toggle-pinyin-dialogue").addEventListener("change", function(e){
+    document.getElementById("cloze-dialogue").classList.toggle("hide-pinyin", !e.target.checked);
+  });
+  (function(){
+    var box = document.getElementById("reading-questions");
+    var html = "";
+    readingQuestions.forEach(function(q, i){
+      html += '<div style="margin-bottom:var(--sp-4);">'+
+        '<p class="instr" style="margin-bottom:.3em;"><span class="han">'+(i+1)+'. '+q[0]+'</span></p>'+
+        '<textarea data-store="rq-'+i+'" style="min-height:3.2em;"></textarea>'+
+      '</div>';
+    });
+    box.innerHTML = html;
+  })();
+
+  /* ============ REORDER ============ */
+  (function(){
+    var container = document.getElementById("reorder-passage");
+    var shuffledIdx = shuffle(passageSentences.map(function(_,i){return i;}));
+    var picked = [];
+    function render(){
+      container.innerHTML = "";
+      shuffledIdx.forEach(function(origIdx){
+        var card = document.createElement("div");
+        card.className = "reorder-card";
+        card.setAttribute("data-orig", origIdx);
+        var pickPos = picked.indexOf(origIdx);
+        if(pickPos>-1) card.classList.add("picked");
+        card.innerHTML = '<span class="reorder-badge">'+(pickPos>-1? (pickPos+1) : "")+'</span><span class="han">'+passageSentences[origIdx]+'</span>';
+        card.addEventListener("click", function(){
+          var idx = picked.indexOf(origIdx);
+          if(idx>-1){ picked.splice(idx,1); } else { picked.push(origIdx); }
+          render();
+        });
+        container.appendChild(card);
+      });
+    }
+    render();
+    var status = document.querySelector("[data-reorder-status]");
+    document.querySelector('[data-action="check-reorder"]').addEventListener("click", function(){
+      var cards = container.querySelectorAll(".reorder-card");
+      var allCorrectSoFar = picked.length===passageSentences.length;
+      cards.forEach(function(card){
+        var orig = parseInt(card.getAttribute("data-orig"),10);
+        var pos = picked.indexOf(orig);
+        card.classList.remove("right","wrong");
+        if(pos>-1){
+          card.classList.add(pos===orig? "right":"wrong");
+          if(pos!==orig) allCorrectSoFar=false;
+        }
+      });
+      status.textContent = picked.length<passageSentences.length ? ("Em chưa chọn đủ cả "+passageSentences.length+" câu.") : (allCorrectSoFar? "Chính xác — đúng thứ tự rồi!" : "Chưa đúng hết — câu viền đỏ cần xếp lại vị trí.");
+      status.className = "cloze-status "+(allCorrectSoFar && picked.length===passageSentences.length ? "ok":"bad");
+    });
+    document.querySelector('[data-action="reset-reorder"]').addEventListener("click", function(){
+      picked = [];
+      shuffledIdx = shuffle(passageSentences.map(function(_,i){return i;}));
+      render();
+      status.textContent = "";
+      status.className = "cloze-status";
+    });
+  })();
+
+  /* ============ NGHE HIỂU: đọc văn bản bằng giọng máy ============ */
+  var zhVoice = null;
+  function pickZhVoice(){
+    if(!('speechSynthesis' in window)) return null;
+    var voices = window.speechSynthesis.getVoices() || [];
+    return voices.find(function(v){return /^zh-TW/i.test(v.lang);}) ||
+           voices.find(function(v){return /^zh-HK/i.test(v.lang);}) ||
+           voices.find(function(v){return /^zh/i.test(v.lang);}) || null;
+  }
+  if('speechSynthesis' in window){
+    zhVoice = pickZhVoice();
+    window.speechSynthesis.onvoiceschanged = function(){ zhVoice = pickZhVoice(); };
+  }
+  function speakHan(text, slow){
+    if(!('speechSynthesis' in window)){
+      alert("Trình duyệt này không hỗ trợ đọc văn bản. Hãy nhờ thầy/cô đọc to đoạn văn bản, hoặc bấm nút 'Xem văn bản gốc' sau khi trả lời.");
+      return;
+    }
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    if(zhVoice){ u.voice = zhVoice; u.lang = zhVoice.lang; } else { u.lang = "zh-TW"; }
+    u.rate = slow ? 0.68 : 0.95;
+    window.speechSynthesis.speak(u);
+  }
+  function speakerIcon(){
+    return '<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>';
+  }
+  function speakerButtonsHtml(text){
+    var enc = encodeURIComponent(text);
+    return '<div class="btn-row" style="margin-top:0;">'+
+      '<button type="button" class="btn ghost btn-speak" data-text="'+enc+'" data-rate="normal">'+speakerIcon()+'Nghe</button>'+
+      '<button type="button" class="btn ghost btn-speak" data-text="'+enc+'" data-rate="slow">'+speakerIcon()+'Nghe chậm</button>'+
+      '</div>';
+  }
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest(".btn-speak");
+    if(!btn) return;
+    speakHan(decodeURIComponent(btn.getAttribute("data-text")), btn.getAttribute("data-rate")==="slow");
+  });
+
+  function initListeningTF(root, data){
+    progressData.listenAnswered.l1 = data.map(function(){return false;});
+    var html = "";
+    data.forEach(function(item, i){
+      html += '<div class="card" style="margin-bottom:var(--sp-3); background:var(--surface-2); box-shadow:none;">'+
+        '<p class="instr" style="margin:0 0 .5em;"><b>Câu '+(i+1)+'.</b> '+item.statement+'</p>'+
+        speakerButtonsHtml(item.text)+
+        '<div class="quiz-options" style="grid-template-columns:1fr 1fr; max-width:260px; margin:var(--sp-3) 0 0;" data-tf="'+i+'">'+
+          '<button type="button" class="opt" data-val="true">Đúng</button>'+
+          '<button type="button" class="opt" data-val="false">Sai</button>'+
+        '</div>'+
+        '<div class="reveal-box" data-tf-result="'+i+'" hidden></div>'+
+      '</div>';
+    });
+    root.innerHTML = html;
+    root.querySelectorAll("[data-tf]").forEach(function(box){
+      var i = parseInt(box.getAttribute("data-tf"),10);
+      box.querySelectorAll(".opt").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          var val = btn.getAttribute("data-val")==="true";
+          var ok = val === data[i].answer;
+          box.querySelectorAll(".opt").forEach(function(o){
+            o.setAttribute("disabled","");
+            if((o.getAttribute("data-val")==="true")===data[i].answer) o.classList.add("correct");
+          });
+          if(!ok) btn.classList.add("wrong");
+          var rb = box.parentElement.querySelector('[data-tf-result="'+i+'"]');
+          rb.hidden = false;
+          rb.innerHTML = (ok? "Chính xác." : "Chưa đúng — đáp án là \""+(data[i].answer?"Đúng":"Sai")+"\".")+'<br><span class="han">Văn bản gốc: '+data[i].text+'</span>';
+          progressData.listenAnswered.l1[i] = true;
+          scheduleRefresh();
+        });
+      });
+    });
+  }
+
+  function initListeningMC(root, data){
+    progressData.listenAnswered.l2 = data.map(function(){return false;});
+    var html = "";
+    data.forEach(function(item, i){
+      html += '<div class="card" style="margin-bottom:var(--sp-3); background:var(--surface-2); box-shadow:none;">'+
+        '<p class="instr" style="margin:0 0 .4em;"><b>Câu '+(i+1)+'.</b></p>'+
+        speakerButtonsHtml(item.text)+
+        '<p class="instr" style="margin:.7em 0 .4em;">'+item.question+'</p>'+
+        '<div class="quiz-options" style="margin:0;" data-mc="'+i+'">'+
+          item.options.map(function(o,oi){ return '<button type="button" class="opt" data-idx="'+oi+'">'+o+'</button>'; }).join("")+
+        '</div>'+
+        '<div class="reveal-box" data-mc-result="'+i+'" hidden></div>'+
+      '</div>';
+    });
+    root.innerHTML = html;
+    root.querySelectorAll("[data-mc]").forEach(function(box){
+      var i = parseInt(box.getAttribute("data-mc"),10);
+      box.querySelectorAll(".opt").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          var idx = parseInt(btn.getAttribute("data-idx"),10);
+          var ok = idx === data[i].correct;
+          box.querySelectorAll(".opt").forEach(function(o){
+            o.setAttribute("disabled","");
+            if(parseInt(o.getAttribute("data-idx"),10)===data[i].correct) o.classList.add("correct");
+          });
+          if(!ok) btn.classList.add("wrong");
+          var rb = box.parentElement.querySelector('[data-mc-result="'+i+'"]');
+          rb.hidden = false;
+          rb.innerHTML = '<span class="han">Văn bản gốc: '+data[i].text+'</span>';
+          progressData.listenAnswered.l2[i] = true;
+          scheduleRefresh();
+        });
+      });
+    });
+  }
+
+  function initListeningAnalysis(root, data){
+    var html = "";
+    data.forEach(function(item, i){
+      html += '<div class="card" style="margin-bottom:var(--sp-3); background:var(--surface-2); box-shadow:none;">'+
+        '<p class="instr" style="margin:0 0 .4em;"><b>Câu '+(i+1)+'.</b></p>'+
+        speakerButtonsHtml(item.text)+
+        '<p class="instr" style="margin:.7em 0 .4em;">'+item.question+'</p>'+
+        '<textarea data-store="listen-l3-'+i+'" style="min-height:4em;"></textarea>'+
+      '</div>';
+    });
+    root.innerHTML = html;
+    root.querySelectorAll("textarea[data-store]").forEach(function(ta){
+      var key = "text-"+ta.getAttribute("data-store");
+      ta.value = lsGet(key, "");
+      ta.addEventListener("input", function(){ lsSet(key, ta.value); });
+    });
+  }
+
+  initListeningTF(document.getElementById("listen-l1"), listeningL1);
+  initListeningMC(document.getElementById("listen-l2"), listeningL2);
+  initListeningAnalysis(document.getElementById("listen-l3"), listeningL3);
+
+  /* ============ PHÂN LOẠI AABB (Có thể lặp / Không thể lặp) ============ */
+  function initClassify(root, data, key){
+    var order = shuffle(data.map(function(_,i){return i;}));
+    progressData.classifyAnswered[key] = data.map(function(){return false;});
+    var html = "";
+    order.forEach(function(origIdx, i){
+      var item = data[origIdx];
+      html += '<div class="card" style="margin-bottom:var(--sp-2); background:var(--surface-2); box-shadow:none; padding:var(--sp-3);">'+
+        '<div style="display:flex; align-items:center; justify-content:space-between; gap:var(--sp-3); flex-wrap:wrap;">'+
+          '<span class="han" style="font-size:1.3rem;">'+item.word+'</span>'+
+          '<div class="quiz-options" style="grid-template-columns:1fr 1fr; max-width:280px; margin:0;" data-cl="'+origIdx+'">'+
+            '<button type="button" class="opt" data-val="co">Lặp được</button>'+
+            '<button type="button" class="opt" data-val="khong">Không lặp được</button>'+
+          '</div>'+
+        '</div>'+
+        '<div class="reveal-box" data-cl-result="'+origIdx+'" hidden></div>'+
+      '</div>';
+    });
+    root.innerHTML = html;
+    root.querySelectorAll("[data-cl]").forEach(function(box){
+      var i = parseInt(box.getAttribute("data-cl"),10);
+      box.querySelectorAll(".opt").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          var val = btn.getAttribute("data-val");
+          var ok = val === data[i].group;
+          box.querySelectorAll(".opt").forEach(function(o){
+            o.setAttribute("disabled","");
+            if(o.getAttribute("data-val")===data[i].group) o.classList.add("correct");
+          });
+          if(!ok) btn.classList.add("wrong");
+          var rb = box.closest(".card").querySelector('[data-cl-result="'+i+'"]');
+          rb.hidden = false;
+          rb.innerHTML = ok? "Chính xác — có thể lặp lại kiểu AABB." : ("Chưa đúng — đáp án đúng là \""+(data[i].group==="co"?"Lặp được":"Không lặp được")+"\".");
+          progressData.classifyAnswered[key][i] = true;
+          scheduleRefresh();
+        });
+      });
+    });
+  }
+  initClassify(document.getElementById("aabb-classify"), aabbWords, "aabb");
+  function isClassifyDone(key){
+    var arr = progressData.classifyAnswered[key] || [];
+    if(!arr.length) return false;
+    return arr.every(function(v){ return v; });
+  }
+
+  /* ============ RANDOM PICKERS ============ */
+  document.getElementById("btn-place").addEventListener("click", function(){
+    var box = document.getElementById("place-box");
+    box.textContent = places[Math.floor(Math.random()*places.length)];
+  });
+  document.getElementById("btn-scenario").addEventListener("click", function(){
+    var box = document.getElementById("scenario-box");
+    box.textContent = scenarios[Math.floor(Math.random()*scenarios.length)];
+  });
+
+  function khLineText(st){ return st.lines.map(function(l){ return khLineLabel[l]; }).join(" & "); }
+  function renderKhPick(pick){
+    var box = document.getElementById("khmap-box");
+    if(!box) return;
+    if(!pick){ box.textContent = "Bấm nút bên dưới để bốc thăm 2 địa điểm"; return; }
+    var a = khStations[pick.a], b = khStations[pick.b];
+    if(!a || !b){ box.textContent = "Bấm nút bên dưới để bốc thăm 2 địa điểm"; return; }
+    var shared = a.lines.filter(function(l){ return b.lines.indexOf(l)>-1; });
+    var hint = shared.length
+      ? "Cùng tuyến ("+khLineLabel[shared[0]]+") — dùng mẫu câu ①②④, không cần đổi tuyến."
+      : "Khác tuyến — nhớ dùng thêm mẫu câu ③ để nói chuyển tuyến tại 美麗島.";
+    box.innerHTML = '<span class="han" style="font-size:1.1rem;">'+a.name+' ('+khLineText(a)+') → '+b.name+' ('+khLineText(b)+')</span><br>'+
+      '<span style="font-size:.85rem; color:var(--ink-faint);">'+hint+'</span>';
+  }
+  function isKhPicked(){ return !!lsGet("khmap-pick", null); }
+  (function(){
+    renderKhPick(lsGet("khmap-pick", null));
+    var btn = document.getElementById("btn-khmap");
+    if(btn) btn.addEventListener("click", function(){
+      var a = Math.floor(Math.random()*khStations.length);
+      var b;
+      do { b = Math.floor(Math.random()*khStations.length); } while(b===a);
+      var pick = {a:a, b:b};
+      lsSet("khmap-pick", pick);
+      renderKhPick(pick);
+      scheduleRefresh();
+    });
+  })();
+
+  /* ============ RUBRIC CHECKLIST ============ */
+  (function(){
+    var box = document.getElementById("rubric-checklist");
+    var state = lsGet("rubric-check", [false,false,false,false]);
+    var html = "";
+    rubricItems.forEach(function(item, i){
+      html += '<label class="check-item"><input type="checkbox" data-i="'+i+'" '+(state[i]?"checked":"")+'><span>'+item+'</span></label>';
+    });
+    box.innerHTML = html;
+    box.querySelectorAll("input").forEach(function(cb){
+      cb.addEventListener("change", function(){
+        state[parseInt(cb.getAttribute("data-i"),10)] = cb.checked;
+        lsSet("rubric-check", state);
+      });
+    });
+  })();
+
+  /* ============ TEXT PERSISTENCE ============ */
+  document.querySelectorAll("textarea[data-store]").forEach(function(ta){
+    var key = "text-"+ta.getAttribute("data-store");
+    ta.value = lsGet(key, "");
+    ta.addEventListener("input", function(){ lsSet(key, ta.value); });
+  });
+  // open-question textareas (ids assigned dynamically) also persist:
+  document.querySelectorAll('textarea[data-store^="open-"]').forEach(function(ta){
+    var key = "text-"+ta.getAttribute("data-store");
+    ta.value = lsGet(key, "");
+    ta.addEventListener("input", function(){ lsSet(key, ta.value); });
+  });
+  document.querySelectorAll('textarea[data-store^="rq-"]').forEach(function(ta){
+    var key = "text-"+ta.getAttribute("data-store");
+    ta.value = lsGet(key, "");
+    ta.addEventListener("input", function(){ lsSet(key, ta.value); });
+  });
+
+  /* ============ KIỂM TRA HOÀN THÀNH TỪNG PHẦN ============ */
+  function isTextFilled(storeKey){
+    var el = document.querySelector('textarea[data-store="'+storeKey+'"]');
+    return !!(el && el.value.trim().length>0);
+  }
+  function isTextPrefixAllFilled(prefix){
+    var els = document.querySelectorAll('textarea[data-store^="'+prefix+'"]');
+    if(!els.length) return false;
+    var allFilled = true;
+    els.forEach(function(el){ if(!el.value.trim().length) allFilled=false; });
+    return allFilled;
+  }
+  function isClozeFilled(blockId){
+    var block = document.getElementById(blockId);
+    if(!block) return false;
+    var blanks = block.querySelectorAll(".blank");
+    if(!blanks.length) return false;
+    var allFilled = true;
+    blanks.forEach(function(b){ if(!b.value.trim().length) allFilled=false; });
+    return allFilled;
+  }
+  function isReorderFilled(){
+    var container = document.getElementById("reorder-passage");
+    if(!container) return false;
+    var cards = container.querySelectorAll(".reorder-card");
+    if(!cards.length) return false;
+    var picked = container.querySelectorAll(".reorder-card.picked");
+    return picked.length === cards.length;
+  }
+  function isScenarioPicked(boxId, placeholderText){
+    var box = document.getElementById(boxId);
+    return !!(box && box.textContent.trim() && box.textContent.trim()!==placeholderText);
+  }
+  function isQuizDone(key){ return !!progressData.quizDone[key]; }
+  function isListenDone(which){
+    var arr = progressData.listenAnswered[which] || [];
+    if(!arr.length) return false;
+    return arr.every(function(v){ return v; });
+  }
+  function isRubricAllChecked(){
+    var box = document.getElementById("rubric-checklist");
+    if(!box) return false;
+    var boxes = box.querySelectorAll('input[type="checkbox"]');
+    if(!boxes.length) return false;
+    var all = true;
+    boxes.forEach(function(cb){ if(!cb.checked) all=false; });
+    return all;
+  }
+
+  var completionManifest = [
+    { idx:0, title:"Trạm 1 · Từ vựng I &amp; Hội thoại", items:[
+      { label:"Khởi động: về nhà/đi xa em thường chọn phương tiện gì?", check:function(){ return isTextFilled("t1-warmup"); } },
+      { label:"Trắc nghiệm & dịch câu từ vựng (Bộ 1)", check:function(){ return isQuizDone("vocab1") && isTextPrefixAllFilled("translate1-"); } },
+      { label:"Điền hội thoại (điền từ vào chỗ trống)", check:function(){ return isClozeFilled("cloze-dialogue"); } },
+      { label:"Dịch từng câu hội thoại sang tiếng Việt", check:function(){ return isTextPrefixAllFilled("dlgtrans-"); } },
+      { label:"Bốc thăm tình huống để đóng vai biến thể", check:function(){ return isScenarioPicked("place-box","Bấm nút bên dưới để bốc thăm tình huống"); } },
+      { label:"Viết đoạn hội thoại đóng vai biến thể", check:function(){ return isTextFilled("t1-roleplay"); } }
+    ]},
+    { idx:1, title:"Trạm 2 · Từ vựng II &amp; Đoạn văn", items:[
+      { label:"Trắc nghiệm & dịch câu từ vựng (Bộ 2)", check:function(){ return isQuizDone("vocab2") && isTextPrefixAllFilled("translate2-"); } },
+      { label:"Dịch từng câu đoạn văn sang tiếng Việt", check:function(){ return isTextPrefixAllFilled("passagetrans-"); } },
+      { label:"Trả lời câu hỏi đọc hiểu đoạn văn", check:function(){ return isTextPrefixAllFilled("rq-"); } },
+      { label:"Sắp xếp lại hành trình", check:isReorderFilled },
+      { label:"Kể lại hành trình bằng lời của em", check:function(){ return isTextFilled("t2-retell"); } }
+    ]},
+    { idx:2, title:"Trạm 3 · Ngữ pháp nhóm A", items:[
+      { label:"Điền cấu trúc 一點也不 V", check:function(){ return isClozeFilled("cloze-yidianyebu"); } },
+      { label:"Viết câu luyện tập 一點也不", check:function(){ return isTextFilled("t3-practice-a"); } },
+      { label:"Điền cấu trúc 還是…吧", check:function(){ return isClozeFilled("cloze-haishi"); } },
+      { label:"Viết câu luyện tập 還是…吧", check:function(){ return isTextFilled("t3-practice-b"); } },
+      { label:"Điền cấu trúc trạng ngữ V一點", check:function(){ return isClozeFilled("cloze-yidian"); } },
+      { label:"Viết câu luyện tập V一點", check:function(){ return isTextFilled("t3-practice-c"); } }
+    ]},
+    { idx:3, title:"Trạm 4 · Ngữ pháp nhóm B", items:[
+      { label:"Điền cấu trúc lặp AABB", check:function(){ return isClozeFilled("cloze-aabb"); } },
+      { label:"Phân loại tính từ Có/Không lặp được", check:function(){ return isClassifyDone("aabb"); } },
+      { label:"Điền cấu trúc 不太", check:function(){ return isClozeFilled("cloze-butai"); } },
+      { label:"★ Phân biệt 一點也不/不太 (trắc nghiệm)", check:function(){ return isQuizDone("distinguish"); } },
+      { label:"Điền cấu trúc vị trí 部/邊", check:function(){ return isClozeFilled("cloze-buwei"); } }
+    ]},
+    { idx:4, title:"Trạm 5 · Nghe hiểu (30 câu)", items:[
+      { label:"Mức 1 — Đúng/Sai (10 câu)", check:function(){ return isListenDone("l1"); } },
+      { label:"Mức 2 — Trắc nghiệm ABCD (10 câu)", check:function(){ return isListenDone("l2"); } },
+      { label:"Mức 3 — Phân tích, tự luận (10 câu)", check:function(){ return isTextPrefixAllFilled("listen-l3-"); } }
+    ]},
+    { idx:5, title:"Trạm 6 · Dự án nói", items:[
+      { label:"Ôn nhanh 6 điểm ngữ pháp", check:function(){ return isTextFilled("t6-review"); } },
+      { label:"Hỏi & chỉ đường: điền đủ 4 tuyến (bảng MRT)", check:function(){ return isTextPrefixAllFilled("route"); } },
+      { label:"Tìm hiểu văn hóa: bốc thăm & viết đoạn chỉ đường Cao Hùng", check:function(){ return isKhPicked() && isTextFilled("khmap-paragraph"); } },
+      { label:"Bốc thăm tình huống dự án", check:function(){ return isScenarioPicked("scenario-box","Bấm nút bên dưới để bốc thăm tình huống"); } },
+      { label:"Soạn kịch bản nói", check:function(){ return isTextFilled("t6-script"); } },
+      { label:"Tự đánh giá theo rubric (tick đủ các ô)", check:isRubricAllChecked }
+    ]}
+  ];
+
+  function stationAllDone(st){ return st.items.every(function(it){ return !!it.check(); }); }
+  function allStationsDone(){ return completionManifest.every(stationAllDone); }
+
+  function refreshRailFromManifest(){
+    var btns = rail.querySelectorAll(".stop");
+    var doneCount = 0;
+    completionManifest.forEach(function(st){
+      var ok = stationAllDone(st);
+      if(ok) doneCount++;
+      var b = btns[st.idx];
+      if(b) b.classList.toggle("done", ok);
+    });
+    var submitted = !!lsGet("submitted", false);
+    var lastBtn = btns[6];
+    if(lastBtn) lastBtn.classList.toggle("submitted", submitted);
+    var pt = document.getElementById("progressText"), pf = document.getElementById("progressFill");
+    var total = completionManifest.length;
+    if(pt) pt.textContent = doneCount+"/"+total+" trạm hoàn thành"+(submitted? " · Đã nộp bài ✓":"");
+    if(pf) pf.style.width = (doneCount/total*100)+"%";
+  }
+
+  function renderCompletionReport(){
+    var html = "";
+    completionManifest.forEach(function(st){
+      var stDone = stationAllDone(st);
+      var itemsHtml = st.items.map(function(it){
+        var ok = !!it.check();
+        return '<li class="'+(ok?"ok":"missing")+'">'+(ok?"✓":"✗")+'&nbsp; '+it.label+'</li>';
+      }).join("");
+      html += '<div class="card" style="margin-bottom:var(--sp-3); background:var(--surface-2); box-shadow:none;">'+
+        '<div style="display:flex; align-items:center; justify-content:space-between; gap:var(--sp-3); flex-wrap:wrap;">'+
+          '<h3 style="margin:0;">'+st.title+(stDone? ' <span style="color:var(--success);">— Hoàn thành ✓</span>' : ' <span style="color:var(--danger);">— Còn thiếu</span>')+'</h3>'+
+          (stDone? '' : '<button type="button" class="btn ghost sm" data-goto="'+st.idx+'">Đi tới trạm này</button>')+
+        '</div>'+
+        '<ul class="completion-list">'+itemsHtml+'</ul>'+
+      '</div>';
+    });
+    var box = document.getElementById("completion-report");
+    box.innerHTML = html;
+    box.querySelectorAll("[data-goto]").forEach(function(btn){
+      btn.addEventListener("click", function(){ goTo(parseInt(btn.getAttribute("data-goto"),10)); });
+    });
+    var allDone = allStationsDone();
+    var statusEl = document.getElementById("overall-status");
+    statusEl.innerHTML = allDone
+      ? '<span style="color:var(--success);">✓ Em đã điền đủ tất cả các phần — có thể nộp bài ở khung dưới.</span>'
+      : '<span style="color:var(--danger);">✗ Em còn thiếu một số phần (xem dấu ✗ ở trên) — hãy bấm "Đi tới trạm này" để quay lại hoàn thành trước khi nộp bài.</span>';
+    var submitBtn = document.getElementById("btn-submit-final");
+    if(submitBtn) submitBtn.disabled = !allDone;
+    refreshRailFromManifest();
+    return allDone;
+  }
+
+  var refreshTimer = null;
+  function scheduleRefresh(){
+    if(refreshTimer) return;
+    refreshTimer = setTimeout(function(){
+      refreshTimer = null;
+      refreshRailFromManifest();
+      if(currentIdx===6) renderCompletionReport();
+    }, 220);
+  }
+  document.getElementById("stage").addEventListener("input", scheduleRefresh);
+  document.getElementById("stage").addEventListener("change", scheduleRefresh);
+  document.getElementById("stage").addEventListener("click", scheduleRefresh);
+  document.getElementById("btn-refresh-report").addEventListener("click", renderCompletionReport);
+
+  /* ============ NỘP BÀI (lưu vào danh sách chung cho giáo viên) ============ */
+  var dbPromise = null;
+  function getDb(){
+    if(!dbPromise){
+      dbPromise = (window.claude && typeof window.claude.use === "function")
+        ? window.claude.use("db").catch(function(){ return null; })
+        : Promise.resolve(null);
+    }
+    return dbPromise;
+  }
+  function slugify(s){
+    return (s||"").toString().normalize("NFD").replace(/[̀-ͯ]/g,"")
+      .toLowerCase().replace(/đ/g,"d").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"") || "hs";
+  }
+  function ensureStudentId(){
+    var id = lsGet("student-id", null);
+    if(!id){
+      id = (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : ("id-"+Date.now()+"-"+Math.random().toString(16).slice(2));
+      lsSet("student-id", id);
+    }
+    return id;
+  }
+  function collectSubmissionPayload(name, cls){
+    var texts = {};
+    ["t1-warmup","t1-roleplay","t2-retell","t3-practice-a","t3-practice-b","t3-practice-c","t6-review","t6-script"].forEach(function(k){
+      var el = document.querySelector('textarea[data-store="'+k+'"]');
+      if(el) texts[k] = el.value;
+    });
+    var scores = {};
+    Object.keys(progressData.quizScore).forEach(function(k){ scores[k] = progressData.quizScore[k]; });
+    return {
+      name: (name||"").trim(),
+      className: (cls||"").trim(),
+      studentId: ensureStudentId(),
+      submittedAt: new Date().toISOString(),
+      stationsDone: completionManifest.filter(stationAllDone).length,
+      totalStations: completionManifest.length,
+      quizScores: scores,
+      texts: texts
+    };
+  }
+  function docIdFor(name, cls, studentId){
+    return slugify(name+"-"+cls)+"--"+studentId.slice(0,8);
+  }
+  document.getElementById("submit-name").value = lsGet("submit-name","");
+  document.getElementById("submit-class").value = lsGet("submit-class","");
+  document.getElementById("submit-name").addEventListener("input", function(e){ lsSet("submit-name", e.target.value); });
+  document.getElementById("submit-class").addEventListener("input", function(e){ lsSet("submit-class", e.target.value); });
+
+  document.getElementById("btn-submit-final").addEventListener("click", function(){
+    var statusEl = document.getElementById("submit-status");
+    var name = document.getElementById("submit-name").value.trim();
+    var cls = document.getElementById("submit-class").value.trim();
+    if(!renderCompletionReport()){
+      statusEl.innerHTML = '<span style="color:var(--danger);">Chưa thể nộp — vẫn còn phần chưa điền, xem báo cáo ở trên.</span>';
+      return;
+    }
+    if(!name){
+      statusEl.innerHTML = '<span style="color:var(--danger);">Em vui lòng nhập Họ và tên trước khi nộp bài.</span>';
+      return;
+    }
+    statusEl.textContent = "Đang nộp bài…";
+    getDb().then(function(db){
+      var payload = collectSubmissionPayload(name, cls);
+      if(!db){
+        lsSet("submitted", true);
+        lsSet("submitted-at", payload.submittedAt);
+        refreshRailFromManifest();
+        statusEl.innerHTML = '<span style="color:var(--danger);">Không kết nối được với hệ thống lưu bài của thầy/cô lúc này (có thể do trình xem không hỗ trợ). Bài làm vẫn được lưu trên máy này — em hãy báo thầy/cô kiểm tra lại kết nối, hoặc thử nộp lại sau.</span>';
+        return;
+      }
+      var id = docIdFor(name, cls, payload.studentId);
+      db.collection("submissions").doc(id).set(payload).then(function(){
+        lsSet("submitted", true);
+        lsSet("submitted-at", payload.submittedAt);
+        refreshRailFromManifest();
+        statusEl.innerHTML = '<span style="color:var(--success);">✓ Đã nộp bài thành công lúc '+new Date(payload.submittedAt).toLocaleString("vi-VN")+'. Em có thể chỉnh sửa và nộp lại bất cứ lúc nào.</span>';
+      }).catch(function(err){
+        statusEl.innerHTML = '<span style="color:var(--danger);">Nộp bài không thành công ('+(err && err.message? err.message : "lỗi không rõ")+'). Vui lòng thử lại.</span>';
+      });
+    });
+  });
+  if(lsGet("submitted", false)){
+    document.getElementById("submit-status").innerHTML = 'Bài của em đã được nộp trước đó (lúc '+ (lsGet("submitted-at","")? new Date(lsGet("submitted-at","")).toLocaleString("vi-VN") : "?") +'). Nếu chỉnh sửa thêm, hãy bấm "Nộp bài" lại để cập nhật.';
+  }
+
+  /* ============ BẢNG DÀNH CHO GIÁO VIÊN ============ */
+  function renderTeacherTable(box, rows){
+    if(!rows.length){ box.innerHTML = '<p class="instr">Chưa có học sinh nào nộp bài.</p>'; return; }
+    rows.sort(function(a,b){ return (b.submittedAt||"").localeCompare(a.submittedAt||""); });
+    var html = '<table class="teacher-table-el"><thead><tr><th>Họ và tên</th><th>Lớp</th><th>Thời gian nộp</th><th>Số trạm hoàn thành</th><th>Điểm trắc nghiệm từ vựng</th></tr></thead><tbody>';
+    rows.forEach(function(r){
+      var scoreParts = [];
+      ["vocab1","vocab2","distinguish"].forEach(function(k){
+        if(r.quizScores && r.quizScores[k]) scoreParts.push(k+": "+r.quizScores[k].score+"/"+r.quizScores[k].total);
+      });
+      html += '<tr><td>'+(r.name||"(không rõ)")+'</td><td>'+(r.className||"—")+'</td><td>'+(r.submittedAt? new Date(r.submittedAt).toLocaleString("vi-VN") : "—")+'</td><td>'+(r.stationsDone||0)+'/'+(r.totalStations||6)+'</td><td>'+(scoreParts.join("; ")||"—")+'</td></tr>';
+    });
+    html += '</tbody></table>';
+    box.innerHTML = html;
+  }
+  function loadTeacherView(){
+    var box = document.getElementById("teacher-table");
+    box.innerHTML = '<p class="instr">Đang tải danh sách…</p>';
+    getDb().then(function(db){
+      if(!db){ box.innerHTML = '<p class="instr" style="color:var(--danger);">Không kết nối được với hệ thống lưu bài (trình xem này có thể chưa hỗ trợ). Hãy mở đúng đường link bài đã xuất bản.</p>'; return; }
+      db.collection("submissions").get().then(function(snap){
+        var rows = (snap && snap.docs ? snap.docs : []).map(function(d){ return d.data ? d.data() : d; });
+        renderTeacherTable(box, rows);
+      }).catch(function(err){
+        box.innerHTML = '<p class="instr" style="color:var(--danger);">Lỗi khi tải danh sách: '+(err && err.message? err.message : "không rõ")+'</p>';
+      });
+    });
+  }
+  document.getElementById("btn-toggle-teacher").addEventListener("click", function(){
+    var panel = document.getElementById("teacher-panel");
+    panel.hidden = !panel.hidden;
+    if(!panel.hidden){ loadTeacherView(); panel.scrollIntoView({behavior:"smooth", block:"start"}); }
+  });
+  document.getElementById("btn-refresh-teacher").addEventListener("click", loadTeacherView);
+
+  /* ============ INIT ============ */
+  buildRail();
+  goTo(currentIdx);
+  refreshRailFromManifest();
+
+  document.getElementById("btn-reset-all").addEventListener("click", function(){
+    if(confirm("Xoá hết bài làm và tiến trình đã lưu trên máy này? (Bài đã nộp trong danh sách của thầy/cô sẽ KHÔNG bị xoá.)")){
+      try{
+        Object.keys(localStorage).filter(function(k){return k.indexOf(LS_PREFIX)===0;}).forEach(function(k){ localStorage.removeItem(k); });
+      }catch(e){}
+      location.reload();
+    }
+  });
+})();
+</script>
